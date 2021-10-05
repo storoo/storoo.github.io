@@ -63,10 +63,10 @@ We will provide lecture notes here soon.
 | Lectures | Speaker | Videos of the lectures |
 |:--------|:-------:|--------:|
 | Introduction, motivation (Oct 4)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4) |
-| Simplical categories I (Oct )  | Pierre Martinez  |
+| Simplical categories I (Oct 11)   | Pierre Martinez  | - |
 | Simplicial categories  II (Oct)   | -   | -   |
 |----------------------------- |
-| Complete Segal spaces I (Oct)  | -   | -   |
+| Complete Segal spaces I (Oct)     | -   | -   |
 | Complete Segal spaces II   | -   | -   |
 | Segal categories I   | -   | -   |
 | Segal categories II   | -   | -   |
