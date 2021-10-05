@@ -58,9 +58,9 @@ There's also a website of a working group organized in Paris 13 on the same subj
 11. "Category theory in context", Emily Riehl
 
 
+We will provide lecture notes here soon. 
 
-
-| Lectures | Speaker | Notes |
+| Lectures | Speaker | Videos of the lectures |
 |:--------|:-------:|--------:|
 | Introduction, motivation (Oct 4)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4)  |
 | Simplical categories I (Oct )  | Pierre Martinez  |
