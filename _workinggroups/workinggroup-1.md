@@ -62,7 +62,7 @@ We will provide lecture notes here soon.
 
 | Lectures | Speaker | Videos of the lectures |
 |:--------|:-------:|--------:|
-| Introduction, motivation (Oct 4)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4)  |
+| Introduction, motivation (Oct 4)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4) |
 | Simplical categories I (Oct )  | Pierre Martinez  |
 | Simplicial categories  II (Oct)   | -   | -   |
 |----------------------------- |
