@@ -62,7 +62,7 @@ There's also a website of a working group organized in Paris 13 on the same subj
 
 | Lectures | Speaker | Notes |
 |:--------|:-------:|--------:|
-| Introduction, motivation (Oct 4)  | Santiago Toro| -  |
+| Introduction, motivation (Oct 4)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4)  |
 | Simplical categories I (Oct )  | Pierre Martinez  |
 | Simplicial categories  II (Oct)   | -   | -   |
 |----------------------------- |
