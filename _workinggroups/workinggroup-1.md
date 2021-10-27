@@ -64,7 +64,7 @@ We will provide lecture notes here soon.
 |:--------|:-------:|--------:|
 | Introduction, motivation (Oct 4)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4) |
 | Simplical categories I (Oct 18 - In French)   | Pierre Martinez  | [SimplicialCatsI](https://youtu.be/_ywwNbnhpZ4) |
-| Interlude: Simplicial objects and Hodge theory (Oct 25)   | Johannes Huisman   | -   |
+| Interlude: Simplicial objects and Hodge theory (Oct 25)   | Johannes Huisman   | [Interlude](https://youtu.be/7TXWguDo5hc)   |
 |----------------------------- |
 | Complete Segal spaces I (Oct)     | -   | -   |
 | Complete Segal spaces II   | -   | -   |
