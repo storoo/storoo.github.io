@@ -71,5 +71,4 @@ We will provide lecture notes here soon.
 | Segal categories II   | -   | -   |
 | Quasicategories I   | -   | -   |
 | Quasicategories II   | -   | -   |
-|=============================|
-|    |   |    |
+
