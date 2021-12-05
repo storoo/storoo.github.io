@@ -62,13 +62,13 @@ We will provide lecture notes here soon.
 
 | Lectures | Speaker | Videos of the lectures |
 |:--------|:-------:|--------:|
-| Introduction, motivation (Oct 4)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4) |
-| Simplical categories I (Oct 18 - In French)   | Pierre Martinez  | [SimplicialCatsI](https://youtu.be/_ywwNbnhpZ4) |
-| Interlude: Simplicial objects and Hodge theory (Oct 25)   | Johannes Huisman   | [Interlude](https://youtu.be/7TXWguDo5hc)   |
+| Introduction, motivation (English)  | Santiago Toro| [Motivation](https://youtu.be/VNkhQtEkRB4) |
+| Simplical categories I (French)   | Pierre Martinez  | [SimplicialCatsI](https://youtu.be/_ywwNbnhpZ4) |
+| Interlude: Simplicial objects and Hodge theory (French)   | Johannes Huisman   | [Interlude](https://youtu.be/7TXWguDo5hc)   |
 |----------------------------- |
-| Simplicial categories II     | Santiago Toro   | [SimplicialCatsII](https://youtu.be/IhNRu2VPJMw)   |
-| Simplicial categories III   | Pierre Martinez   | [SimplicialCatsIII](https://youtu.be/cWI6AYUElYY)   |
-| Segal categories I   | Santiago Toro   | -   |
+| Simplicial categories II (English)     | Santiago Toro   | [SimplicialCatsII](https://youtu.be/IhNRu2VPJMw)   |
+| Simplicial categories III (French)  | Pierre Martinez   | [SimplicialCatsIII](https://youtu.be/cWI6AYUElYY)   |
+| Segal categories I (English)   | Santiago Toro   | -   |
 | Segal categories II   | -   | -   |
 | Quasicategories I   | -   | -   |
 | Quasicategories II   | -   | -   |
