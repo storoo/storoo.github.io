@@ -66,9 +66,9 @@ We will provide lecture notes here soon.
 | Simplical categories I (Oct 18 - In French)   | Pierre Martinez  | [SimplicialCatsI](https://youtu.be/_ywwNbnhpZ4) |
 | Interlude: Simplicial objects and Hodge theory (Oct 25)   | Johannes Huisman   | [Interlude](https://youtu.be/7TXWguDo5hc)   |
 |----------------------------- |
-| Complete Segal spaces I (Oct)     | -   | -   |
-| Complete Segal spaces II   | -   | -   |
-| Segal categories I   | -   | -   |
+| Simplicial categories II     | Santiago Toro   | [SimplicialCatsII](https://youtu.be/IhNRu2VPJMw)   |
+| Simplicial categories III   | Pierre Martinez   | [SimplicialCatsIII](https://youtu.be/cWI6AYUElYY)   |
+| Segal categories I   | Santiago Toro   | -   |
 | Segal categories II   | -   | -   |
 | Quasicategories I   | -   | -   |
 | Quasicategories II   | -   | -   |
