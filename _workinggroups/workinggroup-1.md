@@ -67,8 +67,8 @@ We will provide lecture notes here soon.
 | Interlude: Simplicial objects and Hodge theory (French)   | Johannes Huisman   | [Interlude](https://youtu.be/7TXWguDo5hc)   |
 | Simplicial categories II (English)     | Santiago Toro   | [SimplicialCatsII](https://youtu.be/IhNRu2VPJMw)   |
 | Simplicial categories III (French)  | Pierre Martinez   | [SimplicialCatsIII](https://youtu.be/cWI6AYUElYY)   |
-| Segal categories I (English)   | Santiago Toro   | -   |
-| Segal categories II   | -   | -   |
+| Segal spaces I (English)   | Santiago Toro   | [SegalSpcI](https://youtu.be/8NWxDuNyGXM)   |
+| Segal spaces II (French)  | Pierre Martinez  | [SegalSpcII](https://youtu.be/3T1nCva5EGk)   |
+| Interlude: Cohomological descent (French)   | Johannes Huisman   | -   |
 | Quasicategories I   | -   | -   |
-| Quasicategories II   | -   | -   |
 
