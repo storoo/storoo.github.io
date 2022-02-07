@@ -70,7 +70,7 @@ We will provide lecture notes here soon.
 | Segal spaces I (English)   | Santiago Toro   | [SegalSpcI](https://youtu.be/8NWxDuNyGXM)   |
 | Segal spaces II (French)  | Pierre Martinez  | [SegalSpcII](https://youtu.be/3T1nCva5EGk)   |
 | Interlude: Cohomological descent (French)   | Johannes Huisman   | -   |
-| Segal spaces III (English)   | Santiago Toro   | -   |
+| Segal spaces III (English)   | Santiago Toro   | [SegalSpcIII](https://youtu.be/3jsuNAV4NiA)   |
+| Interlude: Deformation theory (French)   | Grégoire Marc   |  [Deformations](https://youtu.be/KmqSgSbhPEs)  |
 | Complete Segal spaces I (French)   | Pierre Martinez  | -   |
-|    -  | -   |  -  |
-| Quasicategories I   | Santiago Toro  | -   |
+| Quasicategories I   |   | -   |
