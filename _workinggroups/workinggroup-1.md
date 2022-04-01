@@ -73,8 +73,8 @@ We will provide lecture notes here soon.
 | Segal spaces III (English)   | Santiago Toro   | [SegalSpcIII](https://youtu.be/3jsuNAV4NiA)   |
 | Interlude: Deformation theory (French)   | Grégoire Marc   |  [Deformations](https://youtu.be/KmqSgSbhPEs)  |
 | Complete Segal spaces I (French)   | Pierre Martinez  | [CompleteSegalSpc](https://youtu.be/Cz9LWRGeZdE)|
-| Interlude: Good complexifications   | Johannes Huisman  | -   |
-| Quasicategories I   | Santiago Toro  | -   |
-| Quasicategories II   | Pierre Martinez  | [QuasicatsII](https://youtu.be/dkxTso_LDac)   |
-| Interlude: Rigidification of quasicategories   | Johannes Huisman  | -   |
-| Quasicategories III   | Santiago Toro  | [QuasicatsIII](https://youtu.be/xZtk1qSMcfs)   |
+| Interlude: Good complexifications (French)   | Johannes Huisman  | -   |
+| Quasicategories I (English)   | Santiago Toro  | -   |
+| Quasicategories II (French)   | Pierre Martinez  | [QuasicatsII](https://youtu.be/dkxTso_LDac)   |
+| Interlude: Rigidification of quasicategories (French)   | Johannes Huisman  | -   |
+| Quasicategories III (English)   | Santiago Toro  | [QuasicatsIII](https://youtu.be/xZtk1qSMcfs)   |
