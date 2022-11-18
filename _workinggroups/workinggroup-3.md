@@ -1,6 +1,6 @@
 ---
 title: "Real cycle map (2022)"
-excerpt: "This is the website of a working group on Infinity categories organized by Pierre Martinez with my collaboration."
+excerpt: "-"
 collection: workinggroups
 permalink: /working-groups/realcycle
 type: workinggroups
