@@ -49,3 +49,18 @@ KaTeX: true
 18. [S] "Real and étale cohomology", C. Scheiderer
 
 19. [Sc] '"Quadratic and hermitian forms", W. Scharlau
+
+
+| Lectures | Speaker | Notes |
+|:--------|:-------:|--------:|
+|Abelian ctargories I| Fabien |  |
+|Abelian categories II    | Fabien |  |
+|Sheaf cohomoloogy I    | Santiago   | )   |
+|Sehaf cohomology II      | Santiago  | [)   |
+|   |  Achim  | )   |
+|    |  Achim   |    |
+|Grothendieck topos   | Johannes |    |
+|Geometric points    | Johannes  | -   |
+
+
+
