@@ -2,7 +2,7 @@
 title: "Géométrie analytique"
 collection: teaching
 type: "Undergraduate course (L1 parcours PPPE)"
-permalink: /teaching/TDmathgenerales
+permalink: /teaching/TDGeoanalytique
 venue: "Université d'Angers , Géométrie analytique."
 date: 2023-01-01
 location: "Angers, France"
