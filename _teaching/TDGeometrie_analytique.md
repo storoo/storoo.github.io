@@ -18,4 +18,4 @@ Les copies des feuilles de TD se trouvent dans le tableau ci-dessous.
 |:-------:|--------:|
 | [TD 1](https://storoo.github.io/files/TDGA_f1.pdf)  |[]()   |
 | [TD 2](https://storoo.github.io/files/TDGA_f2.pdf)  |[]()         |
-| [CC12022]()  |[CC2022](https://storoo.github.io/files/CC1-2022.pdf)  |
+| [CC12022]()  |  |
