@@ -1,5 +1,5 @@
 ---
-permalink: /non-menu-page/
+permalink: /talks/
 layout: archive
 title: "Talks and presentations"
 author_profile: true
