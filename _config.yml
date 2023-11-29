@@ -87,7 +87,7 @@ author:
   employer         : "LMBA - Brest"
   pubmed           :
   googlescholar    :
-  email            : santiago.torooquendo@etudiant.univ-brest.fr
+  email            : santiago.torooquendo@univ-brest.fr
   researchgate     : "https://www.researchgate.net/profile/Santiago-Toro-Oquendo"
   uri              :
   bitbucket        :
@@ -186,7 +186,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: false
+    output: true
     permalink: /:collection/:path/
 
 
