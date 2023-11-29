@@ -223,7 +223,7 @@ defaults:
   - scope:
       path: ""
       type: publications
-      published: false
+      published: true
     values:
       layout: single
       author_profile: true
@@ -245,7 +245,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 # Sass/SCSS
 sass:
