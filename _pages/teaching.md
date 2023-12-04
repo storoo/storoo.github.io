@@ -14,7 +14,7 @@ KaTeX: true
 {% endfor %}
 
 # At the Université d'Angers
-(As teaching fellow)
+(As Teaching Fellow)
 
 ## Winter 2023 
   * Analytic geometry. 
