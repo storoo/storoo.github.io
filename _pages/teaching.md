@@ -39,7 +39,7 @@ As a Teaching Fellow:
 ### Spring 2023
 
   * Mathematics for life and earth sciences. 
-
+<p>&nbsp;</p> 
 
 # Previous teaching at Université Bretagne Occidentale 
 
@@ -47,6 +47,7 @@ As a Teaching Fellow:
 
   * General Mathematics: Fall 2021
   * Analysis 1: Spring 2022
+<p>&nbsp;</p> 
 
 # Previous Teaching at Universidad Nacional de Colombia 
 
