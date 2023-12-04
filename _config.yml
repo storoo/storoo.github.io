@@ -237,7 +237,16 @@ defaults:
       layout: single
       author_profile: false
       share: false
-      comment: true
+      comments: false
+  # _etc 
+   - scope:
+      path: ""
+      type: etc
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      comments: false
   # _talks
   - scope:
       path: ""
