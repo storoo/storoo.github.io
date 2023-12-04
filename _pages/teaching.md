@@ -26,9 +26,9 @@ As a Teaching Fellow:
 
 ### Spring 2024  
 
-  * Mathematics for life and earth sciences. 
-
-As an Assistant Professor (_Attaché Temporaire d'Enseignement et Recherche_):
+  * Mathematics for life and earth sciences.
+    
+  As an Assistant Professor (_Attaché Temporaire d'Enseignement et Recherche_):
 
 ### Fall 2022 
 
