@@ -13,9 +13,9 @@ KaTeX: true
   {% include archive-single.html %}
 {% endfor %}
 
-# At the Université d'Angers
-(As Teaching Fellow)
 
+# At the Université d'Angers
+(As a Teaching Fellow)
 ## Winter 2023 
   * Analytic geometry. 
   * Arithmetic over $$\mathbb{Z}$$.
@@ -25,25 +25,24 @@ KaTeX: true
 ## Spring 2024  
   * Mathematics for life and earth sciences. 
 
-# At the Université d'Angers
-(As Assistant professor (_attaché temporaire d'enseignement et recherche_) )
 
+# At the Université d'Angers
+(As an Assistant Professor (_attaché temporaire d'enseignement et recherche_) )
 ## Fall 2022 
   * Linear algebra.
   * Analytic geometry.
   * Arithmetic over $$\mathbb{Z}$$. 
-  
 ## Spring 2023
   * Mathematics for life and earth sciences. 
 
+
 ## Previous teaching at Université Bretagne Occidentale 
 (As a PhD Student in Mathematics)
-
   * General Mathematics: Fall 2021
   * Analysis 1: Spring 2022
 
 ## Previous Teaching at Universidad Nacional de Colombia 
-(As MS Student in Mathematics)
+(As a MS Student in Mathematics)
   * Linear Algebra: 2016-01, 2016-02
   * Differential Calculus: 2017-01
   * Integral Calculus: 2017-02
