@@ -15,7 +15,7 @@ KaTeX: true
 
 # At the Université d'Angers
 
-(As a Teaching Fellow)
+As a Teaching Fellow:
 
 ### Winter 2023 
 
@@ -28,29 +28,30 @@ KaTeX: true
 
   * Mathematics for life and earth sciences. 
 
+As an Assistant Professor (_Attaché Temporaire d'Enseignement et Recherche_):
 
-(As an Assistant Professor (_attaché temporaire d'enseignement et recherche_) )
-
-## Fall 2022 
+### Fall 2022 
 
   * Linear algebra.
   * Analytic geometry.
   * Arithmetic over $$\mathbb{Z}$$.
     
-## Spring 2023
+### Spring 2023
 
   * Mathematics for life and earth sciences. 
 
 
-## Previous teaching at Université Bretagne Occidentale 
+# Previous teaching at Université Bretagne Occidentale 
 
 (As a PhD Student in Mathematics)
+
   * General Mathematics: Fall 2021
   * Analysis 1: Spring 2022
 
-## Previous Teaching at Universidad Nacional de Colombia 
+# Previous Teaching at Universidad Nacional de Colombia 
 
 (As a MS Student in Mathematics)
+
   * Linear Algebra: 2016-01, 2016-02
   * Differential Calculus: 2017-01
   * Integral Calculus: 2017-02
