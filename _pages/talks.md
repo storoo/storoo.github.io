@@ -14,3 +14,25 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+
+# 2023
+
+-  Working group "[Real algebraic geometry, motives and $$\mathbb{A}^1$$-homotopy](https://deglise.perso.math.cnrs.fr/Real.html)". ENS de Lyon. Lyon.
+- Séminaire systèmes dynamiques et géométrie. LAREMA - Université d'Angers. Angers.
+- Journées de géométrie algébrique réelle. Rencontres ANR SINTROP - Centre Henri Lebesgue. Nantes.
+<p>&nbsp;</p> 
+# 2022 
+
+- Working group "The real cycle map". LMBA - Université Bretagne Occidentale. Brest.
+- Working group ANR HQDIAG. ENS de Lyon. Lyon
+<p>&nbsp;</p> 
+# 2021 
+
+-
+-
+<p>&nbsp;</p> 
+# 2020
+
+-
+-
+
