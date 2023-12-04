@@ -10,6 +10,9 @@ main:
 
   - title: "Working groups"
     url: /working-groups/
+
+  - title: "Etc"
+    url: /etc/
 #  - title: "Blog Posts"
 #    url: /year-archive/
 
