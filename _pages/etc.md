@@ -22,4 +22,4 @@ Cartagena - Colombia
 
 Cocora - Colombia
 
-<img src="https://storoo.github.io/images/DSCF3027.JPG" alt="Cartagena" width="400"/>
+<img src="https://storoo.github.io/images/DSCF3027.JPG" alt="Cocora1" width="400"/>
