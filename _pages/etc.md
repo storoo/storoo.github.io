@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "Etc"
 permalink: /etc/
 author_profile: true
 ---
