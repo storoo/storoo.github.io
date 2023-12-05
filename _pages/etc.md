@@ -16,11 +16,3 @@ Saumur - France
 Tayrona National Park - Colombia
 
 <img src="https://storoo.github.io/images/DSCF1968.jpg" alt="Tayrona" width="400"/>
-
-Cartagena - Colombia
-
-<img src="https://storoo.github.io/images/DSCF2324.jpg" alt="Cartagena" width="400"/>
-
-Cocora - Colombia
-
-<img src="https://storoo.github.io/images/DSCF3027.jpg" alt="Cocora1" width="400"/>
