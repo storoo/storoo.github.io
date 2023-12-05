@@ -11,3 +11,15 @@ In my spare time I like to take photographs. Here are some of my favorite shots
 Saumur - France
 
 <img src="https://storoo.github.io/files/saumur1.jpg" alt="Saumur Night" width="400"/>
+
+Tayrona National Park - Colombia
+
+<img src="https://storoo.github.io/images/DSCF1968.JPG" alt="Tayrona" width="400"/>
+
+Cartagena - Colombia
+
+<img src="https://storoo.github.io/images/DSCF2324.JPG" alt="Cartagena" width="400"/>
+
+Cocora - Colombia
+
+<img src="https://storoo.github.io/images/DSCF3027.JPG" alt="Cartagena" width="400"/>
