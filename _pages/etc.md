@@ -1,10 +1,12 @@
 ---
 layout: archive
 title: "Etc"
-excerpt: "Some photography"
 permalink: /etc/
 author_profile: true
 ---
 
+In my spare time I like to take photographs. Here are some of my favorite shots
+
+
 Saumur - France
-![Saumur Night](https://storoo.github.io/files/saumur1.jpg)
+<img src="saumur1.jpg" alt="Saumur Night" width="200"/>
