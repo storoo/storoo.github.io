@@ -21,7 +21,7 @@ As a Teaching Fellow:
 
   * Analytic geometry. 
   * Arithmetic over $$\mathbb{Z}$$.
-  * Polynomial Arithmetic 
+  * Arithmetic over $$\mathbb{Z}[x]$$. 
   * Fundamentals of analysis.
 
 ### Spring 2024  
