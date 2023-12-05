@@ -239,7 +239,7 @@ defaults:
       share: false
       comments: false
   # _etc 
-   - scope:
+  - scope:
       path: ""
       type: etc
     values:
