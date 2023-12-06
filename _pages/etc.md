@@ -15,4 +15,4 @@ Saumur - France
 Tayrona National Park - Colombia
 
 
-<img src="images/tayrona1.jpg" alt="Tayrona" width="400"/>
+<img src="https://storoo.github.io/images/tayrona1.jpg" alt="Tayrona" width="400"/>
