@@ -3,6 +3,7 @@ layout: archive
 title: "Research"
 permalink: /publications/
 author_profile: true
+katex: true
 ---
 
 {% if author.googlescholar %}
@@ -14,3 +15,7 @@ author_profile: true
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+
+# Preprints 
+- [Simplicial $$C_2$$-isovariant homotopy](). 2023. Currently under revision, comments are welcome! 
