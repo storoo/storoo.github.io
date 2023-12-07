@@ -19,6 +19,6 @@ katex: true
 
 # Preprints 
 - [_Simplicial $$C_2$$-isovariant homotopy_](https://github.com/storoo.github.io/files/isovariant_homotopy.pdf). 2023. Currently under revision, comments are welcome! 
-- 
+  
 
 # Theses 
