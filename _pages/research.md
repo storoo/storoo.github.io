@@ -30,4 +30,4 @@ I studied the Kass-Wicklengren's generalization of Salmon-Cayley's theorem regar
 
 - Undergraduate report: [_El Teorema de Riemann-Roch_](). Universidad Nacional de Colombia. Colombia.
 
-I studied André Weil's proof of the Riemann-Roch Theorem for curves over algebraically closed fields. 
+I studied André Weil's proof of the Riemann-Roch Theorem for curves over algebraically closed fields. The report is written in spanish. 
