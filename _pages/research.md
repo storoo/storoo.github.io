@@ -28,7 +28,7 @@ to arithmetic counts of lines_](https://storoo.github.io/files/Master_thesis_Gre
 
 I studied the Kass-Wicklengren's generalization of Salmon-Cayley's theorem regarding the number of lines on a smooth projective curve. 
 
-- Undergraduate report: [_El Teorema de Riemann-Roch_](). Universidad Nacional de Colombia. Colombia.
+- Undergraduate report: [_El Teorema de Riemann-Roch_](https://storoo.github.io/files/Tdg_versionweb.pdf). Universidad Nacional de Colombia. Colombia.
 
 I studied André Weil's proof of the Riemann-Roch Theorem for curves over algebraically closed fields. The report is written in spanish. 
 
