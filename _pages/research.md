@@ -23,7 +23,7 @@ katex: true
 
 # Theses 
 
-- PhD Thesis: _Simplicial $$C_2$$-Isovariant Homotopy Theory._ (A copy of my PhD will be available soon). 
+- PhD Thesis: _Simplicial $$C_2$$-Isovariant Homotopy Theory._ (A copy of my PhD thesis will be available soon). 
 
 - Master report: [_Applications of motivic homotopy theory
 to arithmetic counts of lines_](https://storoo.github.io/files/Master_thesis_Grenoble.pdf). Université Grenoble Alpes - France.
