@@ -8,9 +8,7 @@ KaTeX: true
 {% include base_path %}
 
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+
 
 
 # At the Université d'Angers
@@ -22,7 +20,7 @@ As a Teaching Fellow:
   * Analytic geometry. 
   * Arithmetic over $$\mathbb{Z}$$.
   * Arithmetic of polynomials. 
-  * [Fundamentals of analysis.]{{%site.teaching/Fondements_analyse%}}
+  * [Fundamentals of analysis.]{%site.teaching/Fondements_analyse.md%}
 
 ### Spring 2024  
 
