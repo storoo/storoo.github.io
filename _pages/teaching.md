@@ -7,8 +7,6 @@ KaTeX: true
 
 
 
-
-
 # At the Université d'Angers
 
 As a Teaching Fellow:
