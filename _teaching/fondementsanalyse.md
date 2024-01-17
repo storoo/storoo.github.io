@@ -13,13 +13,7 @@ Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ai
 
 Voici un exemple graphique de différents développements limités :
 
+<script crossorigin src="https://www.wolframcdn.com/notebook-embedder/0.1/wolfram-notebook-embedder.js"></script> <div id="5f096c39-6c6f-4d49-8568-98deb5eed358"></div> <script> WolframNotebookEmbedder.embed( "https://www.wolframcloud.com/obj/demonstrations/Published/GraphsOfTaylorPolynomials", document.getElementById("5f096c39-6c6f-4d49-8568-98deb5eed358"), {allowInteract: true} ); </script>
 
-<script crossorigin src="https://www.wolframcdn.com/notebook-embedder/0.1/wolfram-notebook-embedder.js"></script>
-		<div id="5f096c39-6c6f-4d49-8568-98deb5eed358-52076-29434"></div>
-		<script>
-			WolframNotebookEmbedder.embed(
-				"https://www.wolframcloud.com/obj/demonstrations/Published/GraphsOfTaylorPolynomials",
-				document.getElementById("5f096c39-6c6f-4d49-8568-98deb5eed358-52076-29434"), {allowInteract: true}
-			);
-		</script>
+
 
