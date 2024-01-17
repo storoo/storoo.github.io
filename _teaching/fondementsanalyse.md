@@ -11,7 +11,6 @@ Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ai
 
 - [Feuille 1]({% link files/TDP3.pdf %})
 
-Voici un exemple graphique de différents développements limités :
 
 <script 
   crossorigin src="https://www.wolframcdn.com/notebook-embedder/0.1/wolfram-notebook-embedder.js">
