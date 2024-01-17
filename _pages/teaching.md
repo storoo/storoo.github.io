@@ -5,7 +5,7 @@ author_profile: true
 KaTeX: true
 ---
 
-{% include base_path %}
+
 
 
 
