@@ -5,6 +5,8 @@ author_profile: true
 KaTeX: true
 ---
 
+{% include base_path %}
+
 # At the Université d'Angers
 
 As a Teaching Fellow:
