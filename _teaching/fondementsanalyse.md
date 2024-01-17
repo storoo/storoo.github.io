@@ -7,9 +7,9 @@ KaTeX: true
 ---
 
 
-Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ainsi qu'une sélection d'exercices se trouvent ici. 
+Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ainsi qu'une sélection d'exercices se trouvent [ici](#). 
 
-- [Feuille 1]
+- [Feuille 1]({% link files/TDP3.pdf %})
 
 Voici un exemple graphique de différents développements limités :
 
