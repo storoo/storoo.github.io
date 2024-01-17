@@ -18,7 +18,7 @@ As a Teaching Fellow:
   * Analytic geometry. 
   * Arithmetic over $$\mathbb{Z}$$.
   * Arithmetic of polynomials. 
-  * [Fundamentals of analysis.](./teaching/fondementsanalyse)
+  * [Fundamentals of analysis.]({% link _teaching/fondementsanalyse.md %})
 
 ### Spring 2024  
 
