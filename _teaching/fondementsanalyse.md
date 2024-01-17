@@ -13,7 +13,7 @@ Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ai
 
 Voici un exemple graphique de différents développements limités :
 
-<div
+
 <script crossorigin src="https://www.wolframcdn.com/notebook-embedder/0.1/wolfram-notebook-embedder.js"></script>
 		<div id="5f096c39-6c6f-4d49-8568-98deb5eed358-52076-29434"></div>
 		<script>
@@ -22,4 +22,4 @@ Voici un exemple graphique de différents développements limités :
 				document.getElementById("5f096c39-6c6f-4d49-8568-98deb5eed358-52076-29434"), {allowInteract: true}
 			);
 		</script>
-<\div>
+
