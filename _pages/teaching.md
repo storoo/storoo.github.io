@@ -5,11 +5,7 @@ author_profile: true
 KaTeX: true
 ---
 
-{% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
 
 
 # At the Université d'Angers
@@ -21,7 +17,7 @@ As a Teaching Fellow:
   * Analytic geometry. 
   * Arithmetic over $$\mathbb{Z}$$.
   * Arithmetic of polynomials. 
-  * [Fundamentals of analysis.](storoo.github.io/_teaching/fondementsanalyse.md)
+  * [Fundamentals of analysis.](site.teaching/fondementsanalyse.md)
 
 ### Spring 2024  
 
