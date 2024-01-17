@@ -1,5 +1,4 @@
 ---
-collection: teaching
-type: teaching
-KaTeX: true
+title: 'Fondements d'analyse'
+permalink: /fondementsanalyse/
 ---
