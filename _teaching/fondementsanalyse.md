@@ -13,13 +13,15 @@ Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ai
 
 
 <script 
-  crossorigin src="https://www.wolframcdn.com/notebook-embedder/0.1/wolfram-notebook-embedder.js">
-</script> 
-<div 
-  id="5f096c39-6c6f-4d49-8568-98deb5eed358">
-</div> 
+  crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.3/dist/wolfram-notebook-embedder.min.js">
+</script>
+
+<div id="5f096c39-6c6f-4d49-8568-98deb5eed358"></div> 
   <script> 
-    WolframNotebookEmbedder.embed( "https://www.wolframcloud.com/obj/demonstrations/Published/GraphsOfTaylorPolynomials", document.getElementById("5f096c39-6c6f-4d49-8568-98deb5eed358"), {allowInteract: true} ); 
+    WolframNotebookEmbedder.embed(
+      'https://www.wolframcloud.com/obj/demonstrations/Published/GraphsOfTaylorPolynomials', 
+      document.getElementById('5f096c39-6c6f-4d49-8568-98deb5eed358'), {allowInteract: true}
+      ); 
   </script>
 
 
