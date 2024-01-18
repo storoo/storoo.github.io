@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: Géométrie Analytique L1
+title: 'Géométrie Analytique L1'
 permalink: /geometrieanalytique/
 author_profile: true
 KaTeX: true
