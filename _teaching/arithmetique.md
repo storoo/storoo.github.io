@@ -1,7 +1,7 @@
 ---
 layout: archive
 KaTeX: true
-title: Arithmétique dans $$\mathbb{Z}$$
+title: Arithmétique dans $ \mathbb {Z}$
 permalink: /arithmetique/
 author_profile: true
 ---
