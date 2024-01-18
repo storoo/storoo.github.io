@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: Géometrie Analytique L1
-permalink: /fondementsanalyse/
+title: Géométrie Analytique L1
+permalink: /geometrieanalytique/
 author_profile: true
 KaTeX: true
 ---
