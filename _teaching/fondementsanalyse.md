@@ -7,7 +7,7 @@ KaTeX: true
 ---
 
 
-Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ainsi qu'une sélection d'exercices se trouvent [ici](#). 
+Les feuilles du TD se trouvent ci-dessous. Les notes de cours (à compléter) ainsi qu'une sélection d'exercices se trouvent [ici]({% link files/FAnalyseP3.pdf %}). 
 
 - [Feuille 1]({% link files/TDP3.pdf %})
 - [Feuille 2](#)
