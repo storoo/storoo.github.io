@@ -12,5 +12,5 @@ Les fiches TD ainsi que la correction se trouvent ci-dessous. La correction ne r
 
 | Exercices     | Corrigé |
 | ----------- | ----------- |
-| [Feuille 1]({% link files/Geometrie/f1geoplan.pdf %})  | [Cgeo1]({% link files/Geometrie/TD1_geo.pdf %)  |
+| [Feuille 1]({% link files/Geometrie/f1geoplan.pdf %})  | [Cgeo1]({% link files/Geometrie/TD1_geo.pdf %})  |
 | [Feuille 2]({% link files/Geometrie/f2geoplan.pdf %})  |           |
