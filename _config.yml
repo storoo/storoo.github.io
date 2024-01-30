@@ -154,7 +154,7 @@ exclude:
   - vendor
   - talkmap
   - cv.md
-  - talk.md
+  - talks.md
 
 keep_files:
   - .git
