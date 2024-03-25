@@ -12,6 +12,6 @@ Les fiches TD ainsi que quelques corrections se trouvent ci-dessous.
 
 | Exercices     | Corrigé |
 | ----------- | ----------- |
-| [Feuille 1]({% link files/Arithmetique polynomes_TD1.pdf %})  | [Corrections]({% link files/Arithmetiquepolynomes_F1.pdf %})   |
-| [Feuille 2]({% link files/Arithmetique polynomes_TD2.pdf %})  | Bientôt!          |
-| [Feuille 2]({% link files/Arithmetique polynomes_TD3.pdf %})  | [Corrections]({% link files/Arithmetiquepolynomes_F3.pdf %})   |
+| [Feuille 1]({% link files/Arithmetique_polynomes_TD1.pdf %})  | [Corrections]({% link files/Arithmetique_polynomes_F1.pdf %})   |
+| [Feuille 2]({% link files/Arithmetique_polynomes_TD2.pdf %})  | Bientôt!          |
+| [Feuille 2]({% link files/Arithmetique_polynomes_TD3.pdf %})  | [Corrections]({% link files/Arithmetique_polynomes_F3.pdf %})   |
