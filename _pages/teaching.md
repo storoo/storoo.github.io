@@ -16,8 +16,8 @@ As a Teaching Fellow:
 ### Winter 2023 
 
   * [Analytic geometry.]({% link _teaching/geometrie.md %}) 
-  * [Arithmetic over $$\mathbb{Z}$$]({% link _teaching/arithmetique.md %}) .
-  * Arithmetic of polynomials. 
+  * [Arithmetic over $$\mathbb{Z}$$.]({% link _teaching/arithmetique.md %}) 
+  * [Arithmetic of polynomials.]({% link _teaching/arithmetiquepoly.md %}) 
   * [Fundamentals of analysis.]({% link _teaching/fondementsanalyse.md %})
 
 ### Spring 2024  
