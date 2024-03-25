@@ -2,7 +2,7 @@
 layout: archive
 KaTeX: true
 title: Arithmétique de polynômes
-permalink: /arithmetique/
+permalink: /arithmetiquepoly/
 author_profile: true
 ---
 
