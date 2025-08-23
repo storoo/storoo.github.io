@@ -57,7 +57,7 @@
         "authors": ["Santiago Toro"],
         "venue": "Submitted to Documenta Mathematica, 2024",
         "abstract": "This article presents a novel approach to construct a model category structure designed to model the homotopy theory of spaces equipped with an action by the group $$C_2$$, where morphisms are considered to be isovariant. Our methodology centers on simplicial techniques. We replace the conventional simplex category $$\\Delta$$ with a modified category $$C_2 \\Delta$$ and then delve into the study of presheaves of sets on $$C_2 \\Delta$$. To establish the model category structure we employ Cisinski's methods for model structures in categories of presheaves. In particular, we use an analogous idea to the one employed by Cisinski and Moerdjik in the construction of a model category structure for [Dendroidal Sets](https://arxiv.org/abs/0902.1954). Our approach distinguishes itself from prior work, such as [Yeakel's](https://arxiv.org/abs/1907.12135) which primarily focuses on a more topological context and, brings a new perspective to the study of isovariant homotopy theory for $$C_2$$-spaces.",
-        "links": [{ "type": "arXiv", "url": "#" }]
+        "links": [{ "type": "arXiv", "url": "https://arxiv.org/abs/2312.08133" }]
       },
       {
         "title": "A model structure for 2 cartesian fibrations",
