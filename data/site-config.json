@@ -4,7 +4,7 @@
     "title": "Hi! I'm Santiago, a mathematician currently working as Teaching and Research Assistant (ATER in France) at the Université d'Artois.",
     "email": "your.email@university.edu",
   "bio": "Between 2022 and 2024 I worked as Teaching and Research assistant at the [Université d'Angers](https://math.univ-angers.fr). In November 2024 I received my PhD in Mathematics from the <a href=\"https://www.univ-brest.fr/laboratoire-mathematiques-bretagne-atlantique/fr\" target=\"_blank\" rel=\"noopener\">Université de Bretagne Occidentale</a>, under the supervision of <a href=\"https://huisman.perso.math.cnrs.fr/\" target=\"_blank\" rel=\"noopener\">Johannes Huisman</a>. Before that, I completed my Master's degree in Mathematics at the <a href=\"https://www.univ-grenoble-alpes.fr/\" target=\"_blank\" rel=\"noopener\">Université Grenoble Alpes</a> and my Bachelor's degree at the <a href=\"https://www.unal.edu.co/\" target=\"_blank\" rel=\"noopener\">Universidad Nacional de Colombia</a>.  ",
-    "profileImage": "/profile.jpg",
+  "profileImage": "profile.jpg",
     "social": [
       { "type": "email", "url": "mailto:santiago.torooquendo@gmail.com" },
       { "type": "github", "url": "https://github.com/storoo" },

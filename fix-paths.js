@@ -1,43 +1,38 @@
-// Fix asset paths for GitHub Pages subdirectory deployment
-const fs = require('fs');
-const path = require('path');
+// Minimal path adjustments for GitHub Pages after static export.
+// With basePath + assetPrefix configured in next.config.mjs most paths are correct.
+// This script now only patches any remaining hard-coded absolute root href="/" that
+// Next might serialize in preloaded data (defensive) to avoid accidental double-prefixing.
+const fs = require('fs')
+const path = require('path')
 
-function fixPathsInFile(filePath, basePath) {
-  const content = fs.readFileSync(filePath, 'utf8');
-  const fixedContent = content
-    .replace(/href="\/_next\//g, `href="${basePath}/_next/`)
-    .replace(/src="\/_next\//g, `src="${basePath}/_next/`)
-    .replace(/"\/profile\.jpg"/g, `"${basePath}/profile.jpg"`)
-    // Fix JavaScript references to CSS and other assets
-    .replace(/\\"\/\\_next\//g, `\\"${basePath}/_next/`)
-    .replace(/\[\"\/\_next\//g, `["${basePath}/_next/`)
-    // Fix any remaining _next references in JavaScript
-    .replace(/"\/_next\//g, `"${basePath}/_next/`)
-    .replace(/'\/_next\//g, `'${basePath}/_next/`);
-  
-  if (content !== fixedContent) {
-    fs.writeFileSync(filePath, fixedContent);
-    console.log(`Fixed paths in ${filePath}`);
+const basePath = '/math.storoo'
+const outDir = path.join(__dirname, 'out')
+
+function maybeFix(file) {
+  const original = fs.readFileSync(file, 'utf8')
+  let updated = original
+  if (file.endsWith('.html') || file.endsWith('.js')) {
+    // Replace href="/" with href="/math.storoo/" ONLY when not already followed by repo name
+    updated = updated.replace(/href="\/(?!math\.storoo)/g, `href="${basePath}/`)
+  }
+  if (updated !== original) {
+    fs.writeFileSync(file, updated)
+    console.log('Patched', file)
   }
 }
 
-function fixAllPaths(dir, basePath) {
-  const files = fs.readdirSync(dir);
-  
-  for (const file of files) {
-    const fullPath = path.join(dir, file);
-    const stat = fs.statSync(fullPath);
-    
-    if (stat.isDirectory()) {
-      fixAllPaths(fullPath, basePath);
-    } else if (file.endsWith('.html')) {
-      fixPathsInFile(fullPath, basePath);
-    }
+function walk(dir) {
+  for (const entry of fs.readdirSync(dir)) {
+    const full = path.join(dir, entry)
+    const stat = fs.statSync(full)
+    if (stat.isDirectory()) walk(full)
+    else if (/\.(html|js)$/.test(entry)) maybeFix(full)
   }
 }
 
-// Run the fix
-const basePath = '/math.storoo';
-const outDir = './out';
-fixAllPaths(outDir, basePath);
-console.log('Asset paths fixed for GitHub Pages deployment!');
+if (fs.existsSync(outDir)) {
+  walk(outDir)
+  console.log('Post-export path patch complete.')
+} else {
+  console.warn('No out directory found to patch.')
+}

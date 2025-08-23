@@ -1,51 +1,48 @@
+/**
+ * Next.js configuration tailored for GitHub Pages static export.
+ * Key points:
+ * - basePath & assetPrefix ensure all routes + assets (including /_next/*) resolve under /math.storoo
+ * - trailingSlash true so each page becomes a folder with index.html (friendlier for GH Pages)
+ * - images.unoptimized because static export + GH Pages CDN (no Image Optimization server)
+ */
+const isProd = process.env.NODE_ENV === 'production'
+const repoName = 'math.storoo'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // Important for GitHub Pages: serve the site from /<repo>
+  basePath: isProd ? `/${repoName}` : undefined,
+  assetPrefix: isProd ? `/${repoName}/` : undefined,
   images: {
     unoptimized: true,
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 768, 1024, 1280, 1600],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
-  // Add experimental features to handle Windows issues
-  experimental: {
-    // Disable webpack cache on Windows to prevent file system errors
-    webpackBuildWorker: false,
-  },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
+  compiler: { removeConsole: isProd },
+  experimental: { webpackBuildWorker: false },
   webpack: (config, { isServer, dev }) => {
-    // Configure cache based on environment and platform
     if (dev) {
-      // Use memory cache in development to avoid Windows file system issues
-      config.cache = { type: 'memory' };
+      config.cache = { type: 'memory' }
     } else {
-      // Use filesystem cache in production with error handling
       config.cache = {
         type: 'filesystem',
-        compression: false, // Disable compression to reduce write errors
-        maxAge: 1000 * 60 * 60 * 24 * 30, // 30 days
-      };
+        compression: false,
+        maxAge: 1000 * 60 * 60 * 24 * 30,
+      }
     }
-    
-    // Tree shake unused imports only in production
     if (!isServer && !dev) {
-      config.optimization.usedExports = true;
-      config.optimization.sideEffects = false;
+      config.optimization.usedExports = true
+      config.optimization.sideEffects = false
     }
-    
-    return config;
+    return config
+  },
+  publicRuntimeConfig: {
+    basePath: isProd ? `/${repoName}` : '',
   },
 }
 

@@ -2,10 +2,18 @@ import { Navigation } from "@/components/navigation"
 import { SocialLinks } from "@/components/social-links"
 import { getPersonalInfo } from "@/lib/site-data"
 import { RichContent } from "@/components/rich-content"
-import Image from "next/image"
+import { use } from "react"
+import getConfig from 'next/config'
 
 export default function HomePage() {
   const personalInfo = getPersonalInfo() as any
+
+  const { publicRuntimeConfig } = getConfig() || {}
+  const basePath = (publicRuntimeConfig && publicRuntimeConfig.basePath) || ''
+
+  const profileSrc = personalInfo.profileImage?.startsWith('http')
+    ? personalInfo.profileImage
+    : `${basePath}/${personalInfo.profileImage?.replace(/^\/+/, '')}`
 
   return (
     <div className="min-h-screen bg-background">
@@ -15,15 +23,12 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto text-center mb-16">
           <div className="mb-8">
-            <Image
-              src={personalInfo.profileImage || "/placeholder.svg"}
+            <img
+              src={profileSrc}
               alt={`${personalInfo.name} - Mathematician`}
               width={192}
               height={192}
-              className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-border"
-              priority
-              sizes="(max-width: 768px) 192px, 192px"
-            />
+              className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-border"/>
             <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-serif">{personalInfo.name}</h1>
             <p className="text-xl text-muted-foreground mb-6">{personalInfo.title}</p>
             <div className="text-lg text-foreground leading-relaxed max-w-2xl mx-auto prose prose-neutral dark:prose-invert">
