@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Updated color tokens for academic minimalist design */
+  --background: oklch(1 0 0); /* Pure white */
+  --foreground: oklch(0.35 0 0); /* Deep gray #374151 equivalent */
+  --card: oklch(0.98 0 0); /* Light gray #f8fafc equivalent */
+  --card-foreground: oklch(0.35 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.35 0 0);
+  --primary: oklch(0.35 0 0); /* Deep gray for main elements */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.55 0.15 264); /* Indigo #6366f1 equivalent */
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.98 0 0);
+  --muted-foreground: oklch(0.35 0 0);
+  --accent: oklch(0.55 0.15 264); /* Indigo accent */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.55 0.22 25); /* Red for errors */
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.85 0 0); /* Light border #d1d5db equivalent */
+  --input: oklch(0.98 0 0);
+  --ring: oklch(0.55 0.15 264 / 0.5); /* Indigo ring with opacity */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: oklch(0.145 0 0); /* #1a1a1a equivalent */
+  --foreground: oklch(0.985 0 0); /* #fafafa equivalent */
+  --card: oklch(0.205 0 0); /* #212529 equivalent */
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Link styling */
+  a {
+    @apply transition-colors;
+    color: oklch(0.55 0.15 264);
+    text-decoration: none;
+  }
+  a:hover {
+    color: oklch(0.55 0.15 264 / 0.8);
+  }
+  .dark a {
+    color: oklch(0.488 0.243 264.376);
+  }
+  .dark a:hover {
+    color: oklch(0.488 0.243 264.376 / 0.8);
+  }
+}
+
+/* Custom KaTeX font styling */
+/* .katex {
+  font-family: "STIX Two Math", "STIX Two Text", "Times New Roman", "Liberation Serif", serif !important;
+  font-size: 1.1em !important;
+}
+
+.katex .mathnormal {
+  font-family: "STIX Two Math", "STIX Two Text", serif !important;
+  font-style: italic;
+}
+
+.katex .mathit {
+  font-family: "STIX Two Math", "STIX Two Text", serif !important;
+  font-style: italic;
+}
+
+.katex .mathrm {
+  font-family: "STIX Two Math", "STIX Two Text", serif !important;
+  font-style: normal;
+}
+
+.katex .mathbf {
+  font-family: "STIX Two Math", "STIX Two Text", serif !important;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.katex .mathcal, .katex .mathscr {
+  font-family: "STIX Two Math", "STIX Two Text", serif !important;
+} */
+
+/* Alternative modern font options - uncomment to use */
+/*
+.katex {
+  font-family: "Latin Modern Math", "Libertinus Math", "TeX Gyre Termes Math", serif !important;
+}
+*/
+
+/* Alternative sans-serif option - uncomment to use */
+
+.katex {
+  font-family: "Fira Math", "Source Sans Pro", "Helvetica", sans-serif !important;
+}
+

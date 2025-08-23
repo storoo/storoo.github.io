@@ -1,0 +1,259 @@
+{
+  "personal": {
+    "name": "Santiago Toro Oquendo",
+    "title": "Hi! I'm Santiago, a mathematician currently working as Teaching and Research Assistant (ATER in France) at the Université d'Artois.",
+    "email": "your.email@university.edu",
+  "bio": "Between 2022 and 2024 I worked as Teaching and Research assistant at the [Université d'Angers](https://math.univ-angers.fr). In November 2024 I received my PhD in Mathematics from the <a href=\"https://www.univ-brest.fr/laboratoire-mathematiques-bretagne-atlantique/fr\" target=\"_blank\" rel=\"noopener\">Université de Bretagne Occidentale</a>, under the supervision of <a href=\"https://huisman.perso.math.cnrs.fr/\" target=\"_blank\" rel=\"noopener\">Johannes Huisman</a>. Before that, I completed my Master's degree in Mathematics at the <a href=\"https://www.univ-grenoble-alpes.fr/\" target=\"_blank\" rel=\"noopener\">Université Grenoble Alpes</a> and my Bachelor's degree at the <a href=\"https://www.unal.edu.co/\" target=\"_blank\" rel=\"noopener\">Universidad Nacional de Colombia</a>.  ",
+    "profileImage": "/profile.jpg",
+    "social": [
+      { "type": "email", "url": "mailto:santiago.torooquendo@gmail.com" },
+      { "type": "github", "url": "https://github.com/storoo" },
+      { "type": "linkedin", "url": "https://www.linkedin.com/in/storoo" },
+      {"type": "cv", "url": "./research/files/Santiago_Toro_Oquendo_CV.pdf"} 
+    ]
+  },
+  "research": {
+    "overview": "In the past I worked on $$C_2$$-Isovariant Homotopy Theory. I'm currently interested in cartesian fibrations in higher category theory, derived categories for real spaces and recently I started working on AI language models using hyperbolic geometry. Below you can find more details about my research interests, current projects, publications, collaborations and more.",
+    "areas": [
+      {
+        "title": "Isovariant Homotopy Theory",
+        "description": "I developped a simplicial approach to $$C_2$$-isovariant homotopy theory. This framework is meant to study spaces with an involution (action of the group $$C_2$$) where isotropy groups are preserved strictly. I'm currently working on extending this theory to arbitrary profinite groups and exploring connections with real algebraic geometry by means of Betti realization functors ",
+        "keywords": ["Isovariant Homotopy", "Model Categories"]
+      },
+      {
+        "title": "Cartesian Fibrations in Higher Category Theory",
+        "description": "",
+        "keywords": ["-"]
+      }
+    ],
+    "currentProjects": [
+      {
+        "title": "Model structures on enriched fc-multicategories",
+        "period": "2024 - Present", 
+        "status": "Active",
+        "description": "This project develops model category structures for enriched fc-multicategories, building on the foundational work in homotopical algebra. The [preliminary results](./files/model-structures-draft.pdf) show promising applications to derived algebraic geometry. See also the [computational examples](./files/examples.xlsx) and [bibliography](./files/references.bib).",
+        "links": [
+          
+        ]
+      },
+      {
+        "title": "Derived categories for real spaces",
+        "period": "2025 - 2026",
+        "status": "Active",
+        "description": "",
+        "links": []
+      },
+      {
+        "title": "Multimodal AI language models via hyperbolic geometry",
+        "period": "2025 - ",
+        "status": "To be started",
+        "description": "",
+        "links": []
+      }
+    ],
+    "publications": [
+      {
+        "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
+        "authors": ["Santiago Toro"],
+        "venue": "Submitted to Documenta Mathematica, 2024",
+        "abstract": "This article presents a novel approach to construct a model category structure designed to model the homotopy theory of spaces equipped with an action by the group $$C_2$$, where morphisms are considered to be isovariant. Our methodology centers on simplicial techniques. We replace the conventional simplex category $$\\Delta$$ with a modified category $$C_2 \\Delta$$ and then delve into the study of presheaves of sets on $$C_2 \\Delta$$. To establish the model category structure we employ Cisinski's methods for model structures in categories of presheaves. In particular, we use an analogous idea to the one employed by Cisinski and Moerdjik in the construction of a model category structure for [Dendroidal Sets](https://arxiv.org/abs/0902.1954). Our approach distinguishes itself from prior work, such as [Yeakel's](https://arxiv.org/abs/1907.12135) which primarily focuses on a more topological context and, brings a new perspective to the study of isovariant homotopy theory for $$C_2$$-spaces.",
+        "links": [{ "type": "arXiv", "url": "#" }]
+      },
+      {
+        "title": "A model structure for 2 cartesian fibrations",
+        "authors": [""],
+        "venue": "In preparation",
+        "abstract": "",
+        "links": []
+      }
+    ],
+    "thesis": [
+      {
+        "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
+        "authors": ["Santiago Toro Oquendo"],
+        "venue": "PhD Thesis, Université de Bretagne Occidentale, 2024",
+        "abstract": "",
+        "links": [{ "type": "HAL", "url": "#" }]
+      }
+    ],
+    "collaborations": 
+    {
+      "academic": [
+      ],
+      "groups": [
+      ],
+      "disabled": true
+    }
+  },
+  "teaching": {
+    "philosophy": "I believe that mathematics is best learned through active engagement and discovery. My teaching approach emphasizes conceptual understanding over rote memorization, encouraging students to develop their problem-solving abilities and mathematical intuition.\n\nIn my classes, I strive to create an inclusive environment where students feel comfortable asking questions and making mistakes.",
+    "disableTeachingPhilosophy": true,
+    "officeHours": {
+      "schedule": [
+        { "day": "Monday", "time": "2:00-4:00 PM" },
+        { "day": "Wednesday", "time": "2:00-4:00 PM" },
+        { "day": "Friday", "time": "1:00-2:00 PM" }
+      ],
+      "location": "[Building Name], Room [Number]",
+      "note": "Or by appointment - email me to schedule a meeting",
+      "disableOfficeHours": true
+    },
+    "currentCourses": [
+      {
+        "title": "Methods for Mathematics and Computer Science",
+        "schedule": "",
+        "description": "",
+        "keywords": [],
+        "materials": []
+      },
+      {
+        "title": "Linear Algebra",
+        "schedule": "",
+        "description": "",
+        "keywords": [],
+        "materials": []
+      }
+    ],
+    "pastCourses": [
+      {
+        "university": "Université d'Angers",
+        "courses": [
+          { "title": "Analytic Geometry", "terms": ["Fall 2022", "Fall 2023"] },
+          { "title": "Arithmetic over $$\\mathbb{Z}$$", "terms": ["Fall 2022","Fall 2023"] },
+          { "title": "Arithmetic of polynomials", "terms": ["Winter 2023","Spring 2023"] },
+          { "title": "Fundamentals of Analysis", "terms": ["Fall 2023"] },
+          { "title": "Mathematics for Life and Earth Sciences", "terms": ["Spring 2023", "Spring 2024"] },
+          { "title": "Linear Algebra", "terms": ["Fall 2022"] }
+        ]
+      },
+      {
+        "university": "Université de Bretagne Occidentale",
+        "courses": [
+          { "title": "General Mathematics", "terms": ["Fall 2021"] },
+          { "title": "Analysis I", "terms": ["Spring 2022"] }
+        ]
+      },
+      {
+        "university": "Universidad Nacional de Colombia, sede Medellín",
+        "courses": [
+          { "title": "Linear Algebra", "terms": ["Spring 2016", "Fall 2016"] },
+          { "title": "Differential Calculus", "terms": ["Spring 2017"] },
+          { "title": "Integral Calculus", "terms": ["Fall 2017"] }
+        ]
+      }
+    ],
+    "resources": [
+      "Math Tutoring Center - [Location]",
+      "Study Groups - Wednesdays 7:00 PM",
+      "Online Discussion Forum",
+      "Supplementary Materials Library"
+    ],
+    "disableResources": true
+  },
+  "etc": {
+    "talks": [
+      {
+        "title": "K-Theory and Spectral Sequences in Algebraic Topology",
+        "date": "October 2024",
+        "venue": "International Conference on Algebraic Topology, MIT",
+        "type": "Invited",
+        "description": "Presented new results on computing $$K_n(\\mathbb{Z}[G])$$ using the Atiyah-Hirzebruch spectral sequence $$H_p(BG; K_q(\\mathbb{Z})) \\Rightarrow K_{p+q}(\\mathbb{Z}[G])$$. The talk focused on explicit computations for finite groups and applications to the Baum-Connes conjecture.",
+        "materials": [{ "type": "Slides", "url": "#" }, { "type": "Conference", "url": "#" }]
+      },
+      {
+        "title": "Characteristic Classes and Manifold Topology",
+        "date": "September 2024",
+        "venue": "Topology Seminar, Harvard University",
+        "type": "Seminar",
+        "description": "Discussed the relationship between Stiefel-Whitney classes $$w_i(TM) \\in H^i(M; \\mathbb{Z}/2)$$ and the topology of smooth manifolds $$M$$. Presented applications to the classification problem for 4-manifolds.",
+        "materials": [{ "type": "Recording", "url": "#" }]
+      }
+    ],
+    "awards": [
+      {
+        "title": "Excellence in Teaching Award",
+        "organization": "University Name",
+        "year": "2024",
+        "description": "Recognized for outstanding contributions to undergraduate mathematics education."
+      },
+      {
+        "title": "NSF Research Grant",
+        "organization": "National Science Foundation",
+        "year": "2023-2026",
+        "description": "$180,000 grant for research in algebraic topology and K-theory. Principal Investigator."
+      },
+      {
+        "title": "Best Paper Award",
+        "organization": "American Mathematical Society",
+        "year": "2023",
+        "description": "Awarded for paper \"On the K-Theory of Group Rings and Spectral Sequences\" at the annual meeting."
+      }
+    ],
+    "service": {
+      "editorial": [
+        "Associate Editor - Journal of Algebraic Topology (2023-present)",
+        "Reviewer - Multiple Mathematics Journals",
+        "Program Committee - International Conference on Algebraic Topology (2024)",
+        "Grant Review Panel - National Science Foundation (2023)"
+      ],
+      "university": [
+        "Graduate Admissions Committee (2023-2024)",
+        "Curriculum Committee Member (2022-2024)",
+        "Faculty Search Committee (2023)",
+        "Student Mentoring Program Coordinator"
+      ]
+    },
+    "conferences": [
+      {
+        "title": "International Conference on Algebraic Topology",
+        "role": "Invited Speaker",
+        "date": "October 2024",
+        "location": "MIT, Cambridge, MA",
+        "description": "Annual conference bringing together researchers in algebraic topology, K-theory, and related fields.",
+        "url": "#"
+      },
+      {
+        "title": "Workshop on Spectral Sequences",
+        "role": "Organizer",
+        "date": "June 2024",
+        "location": "University Name",
+        "description": "Three-day workshop focused on computational aspects of spectral sequences in topology and algebra.",
+        "url": "#"
+      },
+      {
+        "title": "AMS Sectional Meeting",
+        "role": "Session Chair",
+        "date": "March 2024",
+        "location": "Regional University",
+        "description": "Chaired special session on \"Modern Developments in Algebraic Topology\".",
+        "url": "#"
+      }
+    ],
+    "outreach": {
+      "public": [
+        { "title": "Math Olympiad Coaching", "description": "Local high school students, 2023-present" },
+        { "title": "Science Fair Judge", "description": "Regional Science Fair, 2022-2024" },
+        { "title": "Public Lecture Series", "description": "\"The Beauty of Mathematical Proofs\"" }
+      ],
+      "media": [
+        { "title": "Podcast Interview", "description": "\"Math Talks\" Podcast, Episode 42" },
+        { "title": "Blog Post", "description": "\"Understanding Topology\" - Math Blog" },
+        { "title": "News Interview", "description": "Local news on mathematics education" }
+      ]
+    },
+    "resources": {
+      "academic": [
+        { "title": "arXiv Mathematics", "url": "https://arxiv.org/list/math/recent" },
+        { "title": "MathSciNet", "url": "https://mathscinet.ams.org" },
+        { "title": "Topology Atlas", "url": "http://at.yorku.ca/topology/" },
+        { "title": "K-Theory Preprint Archive", "url": "https://faculty.math.illinois.edu/K-theory/" }
+      ],
+      "student": [
+        { "title": "Khan Academy Mathematics", "url": "https://www.khanacademy.org/math" },
+        { "title": "Paul's Online Math Notes", "url": "https://tutorial.math.lamar.edu/" },
+        { "title": "MIT OpenCourseWare", "url": "https://ocw.mit.edu/courses/mathematics/" },
+        { "title": "Wolfram MathWorld", "url": "https://mathworld.wolfram.com/" }
+      ]
+    }
+  }
+}
