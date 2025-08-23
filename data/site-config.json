@@ -31,7 +31,7 @@
         "title": "Model structures on enriched fc-multicategories",
         "period": "2024 - Present", 
         "status": "Active",
-        "description": "This project develops model category structures for enriched fc-multicategories, building on the foundational work in homotopical algebra. The [preliminary results](./files/model-structures-draft.pdf) show promising applications to derived algebraic geometry. See also the [computational examples](./files/examples.xlsx) and [bibliography](./files/references.bib).",
+        "description": "",
         "links": [
           
         ]
