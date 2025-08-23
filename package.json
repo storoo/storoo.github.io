@@ -1,7 +1,7 @@
 {
   "name": "my-v0-project",
   "version": "0.1.0",
-  "homepage": "https://storoo.github.io/math.storoo.github.io",
+  "homepage": "https://storoo.github.io/math.storoo",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",

@@ -2,6 +2,10 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  basePath: '/math.storoo',
+  images: {
+    unoptimized: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
