@@ -1,10 +1,10 @@
 {
   "name": "my-v0-project",
   "version": "0.1.0",
-  "homepage": "https://storoo.github.io/math.storoo",
+  "homepage": "https://storoo.fr/",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build && node fix-paths.js",
+  "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build",

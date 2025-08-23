@@ -6,18 +6,14 @@
  * - images.unoptimized because static export + GH Pages CDN (no Image Optimization server)
  */
 const isProd = process.env.NODE_ENV === 'production'
-const repoName = 'math.storoo'
-// If deploying to a custom apex/root domain (e.g. storoo.fr), set env CUSTOM_DOMAIN.
-// With CUSTOM_DOMAIN present we drop the subpath base so assets resolve at domain root.
-const hasCustomDomain = !!process.env.CUSTOM_DOMAIN
+// User-site (storoo.github.io) + custom domain (storoo.fr) deployment:
+// No basePath or assetPrefix needed; everything served from domain root.
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  // Important for GitHub Pages: serve the site from /<repo>
-  basePath: isProd && !hasCustomDomain ? `/${repoName}` : undefined,
-  assetPrefix: isProd && !hasCustomDomain ? `/${repoName}/` : undefined,
+  // No basePath/assetPrefix required for user/organization site or custom domain.
   images: {
     unoptimized: true,
     formats: ['image/webp', 'image/avif'],
@@ -44,9 +40,7 @@ const nextConfig = {
     }
     return config
   },
-  publicRuntimeConfig: {
-    basePath: isProd && !hasCustomDomain ? `/${repoName}` : '',
-  },
+  publicRuntimeConfig: { basePath: '' },
 }
 
 export default nextConfig
