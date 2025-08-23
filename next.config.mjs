@@ -2,10 +2,7 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/math.storoo',
-  images: {
-    unoptimized: true,
-  },
+  // Remove basePath - let GitHub Pages handle the subdirectory
   eslint: {
     ignoreDuringBuilds: true,
   },
