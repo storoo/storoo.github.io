@@ -1,0 +1,51 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write  # needed for pushing to gh-pages
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static export
+        env:
+          NODE_ENV: production
+        run: |
+          npm run build
+          # Next.js export is implicit with output: export; it creates 'out'
+          node fix-paths.js || echo 'fix-paths script finished'
+
+      - name: Add .nojekyll
+        run: echo > out/.nojekyll
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: out
+          force_orphan: true
+
+      - name: Post-deploy summary
+        run: |
+          echo "Deployment complete: https://storoo.github.io/math.storoo/" >> $GITHUB_STEP_SUMMARY
