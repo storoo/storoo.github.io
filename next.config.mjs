@@ -2,7 +2,9 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  // Remove basePath - let GitHub Pages handle the subdirectory
+  images: {
+    unoptimized: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },

@@ -4,7 +4,7 @@
   "homepage": "https://storoo.github.io/math.storoo",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && node fix-paths.js",
     "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
