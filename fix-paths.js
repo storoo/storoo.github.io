@@ -7,7 +7,13 @@ function fixPathsInFile(filePath, basePath) {
   const fixedContent = content
     .replace(/href="\/_next\//g, `href="${basePath}/_next/`)
     .replace(/src="\/_next\//g, `src="${basePath}/_next/`)
-    .replace(/"\/profile\.jpg"/g, `"${basePath}/profile.jpg"`);
+    .replace(/"\/profile\.jpg"/g, `"${basePath}/profile.jpg"`)
+    // Fix JavaScript references to CSS and other assets
+    .replace(/\\"\/\\_next\//g, `\\"${basePath}/_next/`)
+    .replace(/\[\"\/\_next\//g, `["${basePath}/_next/`)
+    // Fix any remaining _next references in JavaScript
+    .replace(/"\/_next\//g, `"${basePath}/_next/`)
+    .replace(/'\/_next\//g, `'${basePath}/_next/`);
   
   if (content !== fixedContent) {
     fs.writeFileSync(filePath, fixedContent);
