@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "predeploy": "npm run build && node fix-paths.js",
-    "deploy": "gh-pages -d out",
+  "deploy": "gh-pages -d out --dotfiles",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
