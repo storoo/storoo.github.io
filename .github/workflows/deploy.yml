@@ -15,6 +15,8 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env:
+      CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,6 +41,10 @@ jobs:
       - name: Add .nojekyll
         run: echo > out/.nojekyll
 
+      - name: Add CNAME (custom domain)
+        if: env.CUSTOM_DOMAIN
+        run: echo "$CUSTOM_DOMAIN" > out/CNAME
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -48,4 +54,8 @@ jobs:
 
       - name: Post-deploy summary
         run: |
-          echo "Deployment complete: https://storoo.github.io/math.storoo/" >> $GITHUB_STEP_SUMMARY
+          if [ -n "$CUSTOM_DOMAIN" ]; then
+            echo "Deployment complete: https://$CUSTOM_DOMAIN/" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Deployment complete: https://storoo.github.io/math.storoo/" >> $GITHUB_STEP_SUMMARY
+          fi
