@@ -17,7 +17,7 @@
     "areas": [
       {
         "title": "Isovariant Homotopy Theory",
-        "description": "I developped a simplicial approach to $$C_2$$-isovariant homotopy theory. This framework is meant to study spaces with an involution (action of the group $$C_2$$) where isotropy groups are preserved strictly. I'm currently working on extending this theory to arbitrary profinite groups and exploring connections with real algebraic geometry by means of Betti realization functors ",
+        "description": "I developped a simplicial approach to $$C_2$$-isovariant homotopy theory. This framework is meant to study spaces with an involution (action of the group $$C_2$$) where isotropy groups are preserved strictly. I'm currently working on extending this theory to arbitrary profinite groups and exploring connections with real algebraic geometry by means of <em> isovariant </em> Betti realization functors ",
         "keywords": ["Isovariant Homotopy", "Model Categories"]
       },
       {
