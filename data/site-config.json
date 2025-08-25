@@ -177,6 +177,7 @@
         "description": "Recognized for outstanding contributions to undergraduate mathematics education."
       }
     ],
+    "disabledAwards": true,
     "service": {
       "editorial": [
         "Associate Editor - Journal of Algebraic Topology (2023-present)",
