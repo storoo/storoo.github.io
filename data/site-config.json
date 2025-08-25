@@ -177,7 +177,7 @@
         "description": "Recognized for outstanding contributions to undergraduate mathematics education."
       }
     ],
-    "disabledAwards": true,
+    "disableAwards": true,
     "service": {
       "editorial": [
         "Associate Editor - Journal of Algebraic Topology (2023-present)",
@@ -192,7 +192,7 @@
         "Student Mentoring Program Coordinator"
       ]
     },
-    "disabledService": true,
+    "disableService": true,
     "conferences": [
       {
         "title": "International Conference on Algebraic Topology",
@@ -219,7 +219,7 @@
         "url": "#"
       }
     ],
-    "disabledConferences": true,
+    "disableConferences": true,
     "outreach": {
       "public": [
         { "title": "Math Olympiad Coaching", "description": "Local high school students, 2023-present" },
@@ -232,7 +232,7 @@
         { "title": "News Interview", "description": "Local news on mathematics education" }
       ]
     },
-    "disabledOutreach": true,
+    "disableOutreach": true,
     "resources": {
       "academic": [
         { "title": "arXiv Mathematics", "url": "https://arxiv.org/list/math/recent" },
@@ -247,6 +247,6 @@
         { "title": "Wolfram MathWorld", "url": "https://mathworld.wolfram.com/" }
       ]
     },
-    "disabledResources": true
+    "disableResources": true
   }
 }
