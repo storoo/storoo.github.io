@@ -25,15 +25,14 @@ export default function TeachingPage() {
         <div className="max-w-4xl mx-auto mb-12">
           <h1 className="text-4xl font-bold text-foreground mb-4 font-serif">Teaching</h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I am passionate about mathematics education and believe in making complex concepts accessible to students at
-            all levels. My teaching philosophy emphasizes understanding over memorization and encourages students to
+            I am passionate about mathematics education and believe in making complex concepts accessible to students at all levels. My teaching philosophy emphasizes understanding over memorization and encourages students to
             develop problem-solving skills.
           </p>
         </div>
 
         {showCurrentCourses && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif"> Current Courses (Fall 2025)</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif"> Current Courses (Fall - Spring 2025)</h2>
             <div className="space-y-6">
               {teaching.currentCourses.map((course, index) => (
                 <Card key={index}>
