@@ -192,6 +192,7 @@
         "Student Mentoring Program Coordinator"
       ]
     },
+    "disabledService": true,
     "conferences": [
       {
         "title": "International Conference on Algebraic Topology",
@@ -218,6 +219,7 @@
         "url": "#"
       }
     ],
+    "disabledConferences": true,
     "outreach": {
       "public": [
         { "title": "Math Olympiad Coaching", "description": "Local high school students, 2023-present" },
@@ -230,6 +232,7 @@
         { "title": "News Interview", "description": "Local news on mathematics education" }
       ]
     },
+    "disabledOutreach": true,
     "resources": {
       "academic": [
         { "title": "arXiv Mathematics", "url": "https://arxiv.org/list/math/recent" },
@@ -243,6 +246,7 @@
         { "title": "MIT OpenCourseWare", "url": "https://ocw.mit.edu/courses/mathematics/" },
         { "title": "Wolfram MathWorld", "url": "https://mathworld.wolfram.com/" }
       ]
-    }
+    },
+    "disabledResources": true
   }
 }
