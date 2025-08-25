@@ -153,19 +153,19 @@
   "etc": {
     "talks": [
       {
-        "title": "K-Theory and Spectral Sequences in Algebraic Topology",
+        "title": "Talk 1",
         "date": "October 2024",
-        "venue": "International Conference on Algebraic Topology, MIT",
+        "venue": "Conference",
         "type": "Invited",
-        "description": "Presented new results on computing $$K_n(\\mathbb{Z}[G])$$ using the Atiyah-Hirzebruch spectral sequence $$H_p(BG; K_q(\\mathbb{Z})) \\Rightarrow K_{p+q}(\\mathbb{Z}[G])$$. The talk focused on explicit computations for finite groups and applications to the Baum-Connes conjecture.",
+        "description": "",
         "materials": [{ "type": "Slides", "url": "#" }, { "type": "Conference", "url": "#" }]
       },
       {
-        "title": "Characteristic Classes and Manifold Topology",
+        "title": "Talk 2",
         "date": "September 2024",
-        "venue": "Topology Seminar, Harvard University",
+        "venue": "Conference",
         "type": "Seminar",
-        "description": "Discussed the relationship between Stiefel-Whitney classes $$w_i(TM) \\in H^i(M; \\mathbb{Z}/2)$$ and the topology of smooth manifolds $$M$$. Presented applications to the classification problem for 4-manifolds.",
+        "description": "",
         "materials": [{ "type": "Recording", "url": "#" }]
       }
     ],
@@ -175,18 +175,6 @@
         "organization": "University Name",
         "year": "2024",
         "description": "Recognized for outstanding contributions to undergraduate mathematics education."
-      },
-      {
-        "title": "NSF Research Grant",
-        "organization": "National Science Foundation",
-        "year": "2023-2026",
-        "description": "$180,000 grant for research in algebraic topology and K-theory. Principal Investigator."
-      },
-      {
-        "title": "Best Paper Award",
-        "organization": "American Mathematical Society",
-        "year": "2023",
-        "description": "Awarded for paper \"On the K-Theory of Group Rings and Spectral Sequences\" at the annual meeting."
       }
     ],
     "service": {
