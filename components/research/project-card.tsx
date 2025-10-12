@@ -7,13 +7,13 @@ import { RichContent } from "@/components/rich-content"
 interface ProjectLink { type: string; url: string }
 
 interface ProjectCardProps {
-  title: string
-  period: string
-  status: string
-  description: string
-  links: ProjectLink[]
-  className?: string
-  currentPage?: string
+  title: string;
+  period: string[];
+  status: string;
+  description: string;
+  links: ProjectLink[];
+  className?: string;
+  currentPage?: string;
 }
 
 export function ProjectCard({ title, period, status, description, links, className, currentPage = "research" }: ProjectCardProps) {
@@ -37,7 +37,7 @@ export function ProjectCard({ title, period, status, description, links, classNa
           <RichContent source={description} currentPage={currentPage} />
         </div>
         <div className="flex gap-2">
-          {links.map((link, i) => (
+          {(links ?? []).map((link, i) => (
             <Button key={i} variant="outline" size="sm" asChild>
               <a href={link.url} target="_blank" rel="noreferrer">
                 <FileText className="w-4 h-4 mr-1" />

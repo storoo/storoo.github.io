@@ -30,7 +30,9 @@ export default function HomePage() {
               height={192}
               className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-border"/>
             <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-serif">{personalInfo.name}</h1>
-            <p className="text-xl text-muted-foreground mb-6">{personalInfo.title}</p>
+            <div className="text-xl text-muted-foreground mb-6">
+              <RichContent source={personalInfo.title} currentPage="home" />
+            </div>
             <div className="text-lg text-foreground leading-relaxed max-w-2xl mx-auto prose prose-neutral dark:prose-invert">
               <RichContent source={personalInfo.bio} currentPage="home" />
             </div>

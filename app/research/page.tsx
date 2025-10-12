@@ -48,7 +48,7 @@ export default function ResearchPage() {
           <section className="max-w-4xl mx-auto mb-16">
             <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">Current Projects</h2>
             <div className="space-y-6">
-              {research.currentProjects.map((p, i) => (
+              {research.currentProjects.map((p: any, i) => (
                 <ProjectCard
                   key={i}
                   title={p.title}
@@ -101,6 +101,7 @@ export default function ResearchPage() {
                   title={thesis.title}
                   authors={thesis.authors}
                   venue={thesis.venue}
+                  advisor={thesis.advisor}
                   abstract={thesis.abstract}
                   links={thesis.links}
                   currentPage="research"

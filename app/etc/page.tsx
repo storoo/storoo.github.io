@@ -8,6 +8,22 @@ import { RichContent } from "@/components/rich-content"
 
 export default function EtcPage() {
   const etc = getEtcData()
+  
+  // Check if the entire page is disabled
+  if ((etc as any).disable) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navigation />
+        <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl font-bold text-foreground mb-4 font-serif">Page Temporarily Unavailable</h1>
+            <p className="text-lg text-muted-foreground">This page is currently being updated. Please check back later.</p>
+          </div>
+        </main>
+      </div>
+    )
+  }
+  
   const showTalks = !((etc as any).disableTalks) && etc.talks && etc.talks.length > 0
   const showAwards = !((etc as any).disableAwards) && etc.awards && etc.awards.length > 0
   const showService = !((etc as any).disableService) && etc.service && ((etc.service.editorial?.length||0) > 0 || (etc.service.university?.length||0) > 0)

@@ -1,80 +1,97 @@
 {
   "personal": {
     "name": "Santiago Toro Oquendo",
-    "title": "Hi! I'm Santiago, a mathematician currently working as Teaching and Research Assistant (ATER in France) at the Université d'Artois.",
+    "title": "Hi! I'm Santiago, a mathematician currently working as Temporary Teaching and Research Assistant (ATER in France) at the [LML](http://lml.univ-artois.fr/public/index.html) at Université d'Artois.",
     "email": "your.email@university.edu",
-  "bio": "Between 2022 and 2024 I worked as Teaching and Research assistant at the [Université d'Angers](https://math.univ-angers.fr). In November 2024 I received my PhD in Mathematics from the <a href=\"https://www.univ-brest.fr/laboratoire-mathematiques-bretagne-atlantique/fr\" target=\"_blank\" rel=\"noopener\">Université de Bretagne Occidentale</a>, under the supervision of <a href=\"https://huisman.perso.math.cnrs.fr/\" target=\"_blank\" rel=\"noopener\">Johannes Huisman</a>. Before that, I completed my Master's degree in Mathematics at the <a href=\"https://www.univ-grenoble-alpes.fr/\" target=\"_blank\" rel=\"noopener\">Université Grenoble Alpes</a> and my Bachelor's degree at the <a href=\"https://www.unal.edu.co/\" target=\"_blank\" rel=\"noopener\">Universidad Nacional de Colombia</a>.  ",
+    "bio": "Between 2022 and 2024 I worked as (Temp.) Teaching and Research assistant at the [Université d'Angers](https://math.univ-angers.fr). In November 2024 I received my PhD in Mathematics from the <a href=\"https://www.univ-brest.fr/laboratoire-mathematiques-bretagne-atlantique/fr\" target=\"_blank\" rel=\"noopener\">Université de Bretagne Occidentale</a>, under the supervision of <a href=\"https://huisman.perso.math.cnrs.fr/\" target=\"_blank\" rel=\"noopener\">Johannes Huisman</a>. Before that, I completed my Master's degree in Mathematics at the <a href=\"https://www.univ-grenoble-alpes.fr/\" target=\"_blank\" rel=\"noopener\">Université Grenoble Alpes</a> and my Bachelor's degree at the <a href=\"https://www.unal.edu.co/\" target=\"_blank\" rel=\"noopener\">Universidad Nacional de Colombia</a>.  ",
   "profileImage": "profile.jpg",
     "social": [
       { "type": "email", "url": "mailto:santiago.torooquendo@gmail.com" },
       { "type": "github", "url": "https://github.com/storoo" },
-      { "type": "linkedin", "url": "https://www.linkedin.com/in/storoo" },
       {"type": "cv", "url": "./research/files/Santiago_Toro_Oquendo_CV.pdf"} 
     ]
   },
   "research": {
-    "overview": "In the past I worked on $$C_2$$-Isovariant Homotopy Theory. I'm currently interested in cartesian fibrations in higher category theory, derived categories for real spaces and recently I started working on AI language models using hyperbolic geometry. Below you can find more details about my research interests, current projects, publications, collaborations and more.",
+    "overview": "In the past I worked on $$C_2$$-Isovariant Homotopy Theory. I'm currently interested in cartesian fibrations in higher category theory, model structures over enriched virtual double categories and derived categories for real spaces. Below you can find more details about my research interests, current projects, publications, collaborations and more.",
     "areas": [
       {
         "title": "Isovariant Homotopy Theory",
-        "description": "I developped a simplicial approach to $$C_2$$-isovariant homotopy theory. This framework is meant to study spaces with an involution (action of the group $$C_2$$) where isotropy groups are preserved strictly. I'm currently working on extending this theory to arbitrary profinite groups and exploring connections with real algebraic geometry by means of <em> isovariant </em> Betti realization functors ",
+        "description": "I developped a simplicial approach to $$C_2$$-isovariant homotopy theory. This framework is meant to study spaces with an involution (action of the group $$C_2$$) where isotropy groups are preserved strictly. I'm currently working on extending this theory to arbitrary profinite groups and exploring connections with real algebraic geometry by means of <em> isovariant </em> Betti realization functors.",
         "keywords": ["Isovariant Homotopy", "Model Categories"]
+      },
+       {
+        "title": "Derived categories for real spaces",
+        "description": "In collaboration with [Pierre Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) we are currently exploring the construction of a derived category of sheaves with transfers over <em> real spaces </em> (in the sense of [Huisman](https://huisman.perso.math.cnrs.fr/), [Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) and Gleuher). This theory is meant to be an analogue of Voevodsky's derived category of motives but for real analytic spaces and it should enhance the existing cohomology theory of real spaces developed by Martinez and Gleuher.",
+        "keywords": ["Real spaces", "Derived categories", "Motivic cohomology"]
       },
       {
         "title": "Cartesian Fibrations in Higher Category Theory",
-        "description": "",
-        "keywords": ["-"]
-      }
-    ],
-    "currentProjects": [
-      {
-        "title": "Model structures on enriched fc-multicategories",
-        "period": "2024 - Present", 
-        "status": "Active",
-        "description": "",
-        "links": [
-          
-        ]
+        "description": "I'm interested in the theory of cartesian fibrations in the setting of 2-categories and higher categories. In particular, I'm working in a collaborative project with M. Sarazola, P. Verdugo, J. Nickel, D. Teixeira and C. Bardomiano on the construction of a model category structure for 2-cartesian fibrations over a fixed base 2-category. ",
+        "keywords": ["2-categories", "cartesian fibrations", "model categories"]
       },
       {
-        "title": "Derived categories for real spaces",
-        "period": "2025 - 2026",
-        "status": "Active",
-        "description": "",
-        "links": []
-      },
-      {
-        "title": "Multimodal AI language models via hyperbolic geometry",
-        "period": "2025 - ",
-        "status": "To be started",
-        "description": "",
-        "links": []
+        "title": "Homotopy Theory of Enriched virtual Double Categories",
+        "description": "I'm also exploring the homotopy theory of enriched virtual double categories (or fc-multicategories). In particular, I'm currently investigating the construction of model category structures for these objects and their applications to higher category theory.",
+        "keywords": ["Enriched virtual double categories", "Model categories"]
       }
     ],
+    
     "publications": [
       {
         "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
         "authors": ["Santiago Toro"],
-        "venue": "Submitted to Documenta Mathematica, 2024",
+        "venue": "Submitted, 2024",
         "abstract": "This article presents a novel approach to construct a model category structure designed to model the homotopy theory of spaces equipped with an action by the group $$C_2$$, where morphisms are considered to be isovariant. Our methodology centers on simplicial techniques. We replace the conventional simplex category $$\\Delta$$ with a modified category $$C_2 \\Delta$$ and then delve into the study of presheaves of sets on $$C_2 \\Delta$$. To establish the model category structure we employ Cisinski's methods for model structures in categories of presheaves. In particular, we use an analogous idea to the one employed by Cisinski and Moerdjik in the construction of a model category structure for [Dendroidal Sets](https://arxiv.org/abs/0902.1954). Our approach distinguishes itself from prior work, such as [Yeakel's](https://arxiv.org/abs/1907.12135) which primarily focuses on a more topological context and, brings a new perspective to the study of isovariant homotopy theory for $$C_2$$-spaces.",
         "links": [{ "type": "arXiv", "url": "https://arxiv.org/abs/2312.08133" }]
       },
       {
         "title": "A model structure for 2 cartesian fibrations",
-        "authors": [""],
+        "authors": ["C. Bardomiano", "J. Nickel", "M. Sarazola", "P. Verdugo", "D. Teixeira", "S. Toro Oquendo"],
+        "venue": "In preparation",
+        "abstract": "",
+        "links": []
+      },
+      {
+        "title": "Derived categories for real spaces",
+        "authors": ["P. Martinez", "S. Toro Oquendo"],
         "venue": "In preparation",
         "abstract": "",
         "links": []
       }
     ],
+    "currentProjects": [
+      {
+        "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
+        "description": "This project focuses on developing a simplicial framework for $$C_2$$-isovariant homotopy theory, aiming to extend the theory to arbitrary profinite groups and explore connections with real algebraic geometry through isovariant Betti realization functors."
+      }
+    ],
+    "disableCurrentProjects": true,
     "thesis": [
       {
         "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
         "authors": ["Santiago Toro Oquendo"],
+        "advisor": "Johannes Huisman",
         "venue": "PhD Thesis, Université de Bretagne Occidentale, 2024",
         "abstract": "",
-        "links": [{ "type": "HAL", "url": "#" }]
+        "links": [{ "type": "HAL", "url": "https://theses.hal.science/tel-05016432v1" }]
+      },
+      {
+        "title": "Applications of motivic homotopy theory to arithmetic counts of lines",
+        "authors": ["Santiago Toro Oquendo"],
+        "advisor": "Johannes Huisman & Jean Fasel",
+        "venue": "Master's Thesis, Université Grenoble Alpes, 2019",
+        "abstract": "",
+        "links": [{ "url": "./files/Master_thesis_Grenoble.pdf", "type": "PDF" }]
+      },
+      {
+        "title": "The Riemann-Roch theorem for curves (in Spanish)",
+        "authors": ["Santiago Toro Oquendo"],
+        "advisor": "Margarita Toro",
+        "venue": "Bachelor's Thesis, Universidad Nacional de Colombia, 2015",
+        "abstract": "",
+        "links": [{ "url": "./files/Tdg_versionweb.pdf", "type": "PDF" }]
       }
+      
     ],
     "collaborations": 
     {
@@ -101,14 +118,14 @@
     "currentCourses": [
       {
         "title": "Methods for Mathematics and Computer Science",
-        "schedule": "",
-        "description": "",
+        "schedule": "TD3: Mon 09:00-10:30 and Thu 11:30-13:00; TD4: Mon 10:55-12:15 and Wed 09:00-10:30",
+        "description": "Material for the course can be found in [Moodle](https://moodle.univ-artois.fr/). The course covers basic concepts in logic, set theory, arithmetic and polynomials.",
         "keywords": [],
         "materials": []
       },
       {
         "title": "Linear Algebra",
-        "schedule": "",
+        "schedule": "Winter 2026",
         "description": "",
         "keywords": [],
         "materials": []
@@ -151,6 +168,7 @@
     "disableResources": true
   },
   "etc": {
+    "disable": true,
     "talks": [
       {
         "title": "Talk 1",
