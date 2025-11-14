@@ -21,7 +21,7 @@
       },
        {
         "title": "Derived categories for real spaces",
-        "description": "In collaboration with [Pierre Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) we are currently exploring the construction of a derived category of sheaves with transfers over <em> real spaces </em> (in the sense of [Huisman](https://huisman.perso.math.cnrs.fr/), [Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) and Gleuher). This theory is meant to be an analogue of Voevodsky's derived category of motives but for real analytic spaces and it should enhance the existing cohomology theory of real spaces developed by Martinez and Gleuher.",
+        "description": "In collaboration with [Pierre Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) we are currently exploring the construction of a derived category of sheaves with transfers over <em> real spaces </em> (in the sense of [Huisman](https://huisman.perso.math.cnrs.fr/), [Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) and Gleuher). This theory is meant to be an analogue of Voevodsky's derived category of motives but for <em> complexified </em> real analytic spaces and it should enhance the existing cohomology theory of real spaces developed by Martinez and Gleuher.",
         "keywords": ["Real spaces", "Derived categories", "Motivic cohomology"]
       },
       {
