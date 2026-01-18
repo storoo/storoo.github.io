@@ -87,7 +87,10 @@ export const RichContent = memo(function RichContent({ source, className = "", i
         if (typeof n === "string") {
           const clean = DOMPurify.sanitize(
             n.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, ""),
-            { ADD_TAGS: ["span"], ADD_ATTR: ["class", "style", "href", "target", "rel", "download"] }
+            { 
+              ADD_TAGS: ["span", "iframe"], 
+              ADD_ATTR: ["class", "style", "href", "target", "rel", "download", "width", "height", "src", "title", "frameborder", "allow", "referrerpolicy", "allowfullscreen"] 
+            }
           );
           return <span key={i} dangerouslySetInnerHTML={{ __html: clean }} />;
         }
