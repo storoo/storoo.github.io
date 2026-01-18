@@ -203,7 +203,7 @@
         "schedule": "Winter 2026",
         "description": {
           "en": "Here's some material for the course. The course covers basic concepts in Linear Algebra such as vector spaces, systems of linear equations, matrices and linear transformations.\n\n<br>\n\n| Fiche de TD | Corrections |\n|-------------|-------------|\n| TD 1 | Correction 1 |\n| TD 2 | Correction 2 |\n| TD 3 | Correction 3 |\n| TD 4 | Correction 4 |\n| TD 5 | Correction 5 |",
-          "fr": "Voici le matériel du cours. Le cours couvre les concepts de base de l'algèbre linéaire tels que les espaces vectoriels, les systèmes d'équations linéaires, les matrices et les transformations linéaires.\n\n<br>\n\n| Fiche de TD | Corrections |\n|-------------|-------------|\n| [TD 1](./files/Fiche_1_2026.pdf) | Correction 1 |\n| [TD 2](.files/Fiche_2_2026) | Correction 2 |\n| TD 3 | Correction 3 |\n| TD 4 | Correction 4 |\n| TD 5 | Correction 5 |"
+          "fr": "Voici le matériel du cours. Le cours couvre les concepts de base de l'algèbre linéaire tels que les espaces vectoriels, les systèmes d'équations linéaires, les matrices et les transformations linéaires.\n\n<br>\n\n| Fiche de TD | Corrections |\n|-------------|-------------|\n| [TD 1](./files/Fiche_1_2026.pdf) | Correction 1 |\n| [TD 2](./files/Fiche_2_2026.pdf) | Correction 2 |\n| TD 3 | Correction 3 |\n| TD 4 | Correction 4 |\n| TD 5 | Correction 5 |"
         },
         "keywords": [],
         "materials": []
