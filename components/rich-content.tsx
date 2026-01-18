@@ -65,8 +65,13 @@ export const RichContent = memo(function RichContent({ source, className = "", i
             newAttrs += ' target="_blank" rel="noopener noreferrer"';
           }
           
+          // For PDFs, open in new tab instead of downloading
           if (resolved.isFile) {
-            newAttrs += ' download';
+            if (href.toLowerCase().endsWith('.pdf')) {
+              newAttrs += ' target="_blank" rel="noopener noreferrer"';
+            } else {
+              newAttrs += ' download';
+            }
           }
           
           return `<a href="${resolved.href}"${newAttrs}>`;

@@ -45,7 +45,7 @@ export default function TeachingPage() {
                     <div className="flex items-start justify-between">
                       <div>
                         <CardTitle className="text-xl mb-1">
-                          <RichContent inline source={course.title} />
+                          <RichContent inline source={course.title} currentPage="teaching" />
                         </CardTitle>
                         <div className="flex items-center text-sm text-muted-foreground mb-2">
                           <Calendar className="w-4 h-4 mr-1" />
@@ -61,7 +61,7 @@ export default function TeachingPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="text-muted-foreground mb-1 prose prose-neutral dark:prose-invert">
-                      <RichContent source={course.description} />
+                      <RichContent source={course.description} currentPage="teaching" />
                     </div>
                     <div className="flex flex-wrap gap-2 mb-1">
                       {course.keywords.map((keyword, keyIndex) => (
