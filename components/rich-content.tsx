@@ -11,6 +11,8 @@ import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 import { resolvePath } from "@/lib/path-resolver";
+import { useLanguage } from "@/lib/language-context";
+import { getLocalizedText } from "@/lib/site-data";
 
 /**
  * RichContent renders a string that may contain Markdown, inline HTML and $$ KaTeX $$ math.
@@ -26,13 +28,18 @@ const tokenMap: Record<string, React.ReactNode> = {
 };
 
 interface RichContentProps { 
-  source: string; 
+  source: string | { en: string; fr: string }; 
   className?: string; 
   inline?: boolean;
   currentPage?: string; // Add context for path resolution
 }
 
 export const RichContent = memo(function RichContent({ source, className = "", inline = false, currentPage = "home" }: RichContentProps) {
+  const { language } = useLanguage();
+  
+  // Get the localized text
+  const localizedSource = typeof source === 'string' ? source : getLocalizedText(source, language);
+  
   const nodes = useMemo(() => {
     try {
       const file = unified()
@@ -43,7 +50,7 @@ export const RichContent = memo(function RichContent({ source, className = "", i
         .use(rehypeKatex)
         .use(rehypeRaw)
         .use(rehypeStringify)
-        .processSync(source);
+        .processSync(localizedSource);
 
       let rawHtml = String(file);
       
@@ -83,9 +90,9 @@ export const RichContent = memo(function RichContent({ source, className = "", i
       });
     } catch (e) {
       console.error("RichContent render error", e);
-      return source;
+      return localizedSource;
     }
-  }, [source, currentPage]);
+  }, [localizedSource, currentPage]);
 
   if (inline) {
     return <span className={className}>{nodes}</span>;

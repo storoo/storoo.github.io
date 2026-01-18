@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Alegreya_Sans } from "next/font/google"
 import "./globals.css"
+import { LanguageProvider } from "@/lib/language-context"
 
 const alegreyaSans = Alegreya_Sans({
   subsets: ["latin"],
@@ -55,7 +56,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-  <body className="bg-background text-foreground font-sans" suppressHydrationWarning>{children}</body>
+  <body className="bg-background text-foreground font-sans" suppressHydrationWarning>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   )
 }

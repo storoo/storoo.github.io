@@ -1,12 +1,15 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { SocialLinks } from "@/components/social-links"
 import { getPersonalInfo } from "@/lib/site-data"
 import { RichContent } from "@/components/rich-content"
-import { use } from "react"
+import { useLanguage } from "@/lib/language-context"
 import getConfig from 'next/config'
 
 export default function HomePage() {
-  const personalInfo = getPersonalInfo() as any
+  const { language } = useLanguage()
+  const personalInfo = getPersonalInfo(language) as any
 
   const { publicRuntimeConfig } = getConfig() || {}
   const basePath = (publicRuntimeConfig && publicRuntimeConfig.basePath) || ''
@@ -41,7 +44,7 @@ export default function HomePage() {
 
         {/* Minimal Contact / Social Section */}
         <section className="max-w-2xl mx-auto text-center mt-10">
-          <p className="text-lg text-muted-foreground mb-6">Feel free to get in touch!</p>
+          <p className="text-lg text-muted-foreground mb-6">{language === 'en' ? 'Feel free to get in touch!' : 'N\'hésitez pas à me contacter!'}</p>
           <SocialLinks />
         </section>
       </main>

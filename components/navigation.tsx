@@ -5,15 +5,18 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { useState, memo } from "react"
+import { LanguageSwitcher } from "@/components/language-switcher"
+import { useLanguage } from "@/lib/language-context"
 
 const navigationItems = [
-  { name: "Research", href: "/research" },
-  { name: "Teaching", href: "/teaching" },
-  { name: "Etc", href: "/etc" },
+  { name: { en: "Research", fr: "Recherche" }, href: "/research" },
+  { name: { en: "Teaching", fr: "Enseignement" }, href: "/teaching" },
+  { name: { en: "Etc", fr: "Etc" }, href: "/etc" },
 ] as const
 
 const Navigation = memo(function Navigation() {
   const pathname = usePathname()
+  const { language } = useLanguage()
 
   return (
   <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -34,12 +37,12 @@ const Navigation = memo(function Navigation() {
             </Link>
           </div>
 
-          {/* Navigation items on the right */}
+          {/* Navigation items and language switcher on the right */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navigationItems.map((item) => (
                 <Link
-                  key={item.name}
+                  key={item.href}
                   href={item.href}
                   className={cn(
                     "px-3 py-2 rounded-md text-sm font-medium transition-colors",
@@ -48,9 +51,10 @@ const Navigation = memo(function Navigation() {
                       : "text-foreground hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800/60",
                   )}
                 >
-                  {item.name}
+                  {item.name[language]}
                 </Link>
               ))}
+              <LanguageSwitcher />
             </div>
           </div>
 
@@ -66,6 +70,7 @@ const Navigation = memo(function Navigation() {
 
 const MobileMenu = memo(function MobileMenu() {
   const pathname = usePathname()
+  const { language } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -99,7 +104,7 @@ const MobileMenu = memo(function MobileMenu() {
             </Link>
             {navigationItems.map((item) => (
               <Link
-                key={item.name}
+                key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
@@ -109,9 +114,12 @@ const MobileMenu = memo(function MobileMenu() {
                     : "text-foreground hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800/60",
                 )}
               >
-                {item.name}
+                {item.name[language]}
               </Link>
             ))}
+            <div className="px-4 py-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}

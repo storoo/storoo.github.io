@@ -1,3 +1,5 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { FileText } from "lucide-react"
@@ -7,9 +9,11 @@ import { RichContent } from "@/components/rich-content"
 import { AreaCard } from "@/components/research/area-card"
 import { ProjectCard } from "@/components/research/project-card"
 import { PublicationEntry } from "@/components/research/publication-entry"
+import { useLanguage } from "@/lib/language-context"
 
 export default function ResearchPage() {
-  const research = getResearchData()
+  const { language } = useLanguage()
+  const research = getResearchData(language)
   const showAreas = !((research as any).disableAreas) && research.areas && research.areas.length > 0
   const showCurrentProjects = !((research as any).disableCurrentProjects) && research.currentProjects && research.currentProjects.length > 0
   const showPublications = !((research as any).disablePublications) && research.publications && research.publications.length > 0
@@ -27,7 +31,7 @@ export default function ResearchPage() {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Page Header */}
         <div className="max-w-4xl mx-auto mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4 font-serif">Research</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4 font-serif">{language === 'en' ? 'Research' : 'Recherche'}</h1>
           <div className="text-lg text-muted-foreground leading-relaxed prose prose-neutral dark:prose-invert">
             <RichContent source={research.overview} currentPage="research" />
           </div>
@@ -35,7 +39,7 @@ export default function ResearchPage() {
 
         {showAreas && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">Research Areas</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{language === 'en' ? 'Research Areas' : 'Domaines de recherche'}</h2>
             <div className="grid md:grid-cols-2 gap-2">
               {research.areas.map((area, i) => (
                 <AreaCard key={i} title={area.title} description={area.description} keywords={area.keywords} currentPage="research" />
@@ -46,7 +50,7 @@ export default function ResearchPage() {
 
         {showCurrentProjects && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">Current Projects</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{language === 'en' ? 'Current Projects' : 'Projets en cours'}</h2>
             <div className="space-y-6">
               {research.currentProjects.map((p: any, i) => (
                 <ProjectCard
@@ -65,7 +69,7 @@ export default function ResearchPage() {
 
         {showPublications && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">Publications and Preprints</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{language === 'en' ? 'Publications and Preprints' : 'Publications et prépublications'}</h2>
             <div className="space-y-6">
               {research.publications.map((pub, i) => (
                 <PublicationEntry
@@ -93,7 +97,7 @@ export default function ResearchPage() {
 
         {showThesis && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">Thesis</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{language === 'en' ? 'Thesis' : 'Thèses'}</h2>
             <div className="space-y-6">
               {(research as any).thesis.map((thesis: any, i: number) => (
                 <PublicationEntry

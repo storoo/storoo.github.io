@@ -1,9 +1,15 @@
 {
   "personal": {
     "name": "Santiago Toro Oquendo",
-    "title": "Hi! I'm Santiago, a mathematician currently working as Temporary Teaching and Research Assistant (ATER in France) at the [LML](http://lml.univ-artois.fr/public/index.html) at Université d'Artois.",
+    "title": {
+      "en": "Hi! I'm Santiago, a mathematician currently working as Temporary Teaching and Research Assistant (ATER in France) at the [LML](http://lml.univ-artois.fr/public/index.html) at Université d'Artois.",
+      "fr": "Bonjour! Je suis Santiago, mathématicien travaillant actuellement comme Attaché Temporaire d'Enseignement et de Recherche (ATER) au [LML](http://lml.univ-artois.fr/public/index.html) à l'Université d'Artois."
+    },
     "email": "your.email@university.edu",
-    "bio": "Between 2022 and 2024 I worked as (Temp.) Teaching and Research assistant at the [Université d'Angers](https://math.univ-angers.fr). In November 2024 I received my PhD in Mathematics from the <a href=\"https://www.univ-brest.fr/laboratoire-mathematiques-bretagne-atlantique/fr\" target=\"_blank\" rel=\"noopener\">Université de Bretagne Occidentale</a>, under the supervision of <a href=\"https://huisman.perso.math.cnrs.fr/\" target=\"_blank\" rel=\"noopener\">Johannes Huisman</a>. Before that, I completed my Master's degree in Mathematics at the <a href=\"https://www.univ-grenoble-alpes.fr/\" target=\"_blank\" rel=\"noopener\">Université Grenoble Alpes</a> and my Bachelor's degree at the <a href=\"https://www.unal.edu.co/\" target=\"_blank\" rel=\"noopener\">Universidad Nacional de Colombia</a>.  ",
+    "bio": {
+      "en": "Between 2022 and 2024 I worked as (Temp.) Teaching and Research assistant at the [Université d'Angers](https://math.univ-angers.fr). In November 2024 I received my PhD in Mathematics from the <a href=\"https://www.univ-brest.fr/laboratoire-mathematiques-bretagne-atlantique/fr\" target=\"_blank\" rel=\"noopener\">Université de Bretagne Occidentale</a>, under the supervision of <a href=\"https://huisman.perso.math.cnrs.fr/\" target=\"_blank\" rel=\"noopener\">Johannes Huisman</a>. Before that, I completed my Master's degree in Mathematics at the <a href=\"https://www.univ-grenoble-alpes.fr/\" target=\"_blank\" rel=\"noopener\">Université Grenoble Alpes</a> and my Bachelor's degree at the <a href=\"https://www.unal.edu.co/\" target=\"_blank\" rel=\"noopener\">Universidad Nacional de Colombia</a>.",
+      "fr": "Entre 2022 et 2024, j'ai travaillé comme attaché temporaire d'enseignement et de recherche à l'[Université d'Angers](https://math.univ-angers.fr). En novembre 2024, j'ai obtenu mon doctorat en mathématiques de l'<a href=\"https://www.univ-brest.fr/laboratoire-mathematiques-bretagne-atlantique/fr\" target=\"_blank\" rel=\"noopener\">Université de Bretagne Occidentale</a>, sous la direction de <a href=\"https://huisman.perso.math.cnrs.fr/\" target=\"_blank\" rel=\"noopener\">Johannes Huisman</a>. Auparavant, j'ai obtenu mon master en mathématiques à l'<a href=\"https://www.univ-grenoble-alpes.fr/\" target=\"_blank\" rel=\"noopener\">Université Grenoble Alpes</a> et ma licence à l'<a href=\"https://www.unal.edu.co/\" target=\"_blank\" rel=\"noopener\">Universidad Nacional de Colombia</a>."
+    },
   "profileImage": "profile.jpg",
     "social": [
       { "type": "email", "url": "mailto:santiago.torooquendo@gmail.com" },
@@ -12,26 +18,53 @@
     ]
   },
   "research": {
-    "overview": "In the past I worked on $$C_2$$-Isovariant Homotopy Theory. I'm currently interested in cartesian fibrations in higher category theory, model structures over enriched virtual double categories and derived categories for real spaces. Below you can find more details about my research interests, current projects, publications, collaborations and more.",
+    "overview": {
+      "en": "In the past I worked on $$C_2$$-Isovariant Homotopy Theory. I'm currently interested in cartesian fibrations in higher category theory, model structures over enriched virtual double categories and derived categories for real spaces. Below you can find more details about my research interests, current projects, publications, collaborations and more.",
+      "fr": "Auparavant j'ai travaillé sur la théorie de l'homotopie $$C_2$$-isovariante. Je m'intéresse actuellement aux fibrations cartésiennes en théorie des catégories supérieures, aux structures de modèles sur les catégories enrichies sur des catégories virtuelles doubles et aux catégories dérivées pour les espaces réels. Vous trouverez ci-dessous plus de détails sur mes intérêts de recherche, projets en cours, publications, collaborations, etc."
+    },
     "areas": [
       {
-        "title": "Isovariant Homotopy Theory",
-        "description": "I developped a simplicial approach to $$C_2$$-isovariant homotopy theory. This framework is meant to study spaces with an involution (action of the group $$C_2$$) where isotropy groups are preserved strictly. I'm currently working on extending this theory to arbitrary profinite groups and exploring connections with real algebraic geometry by means of <em> isovariant </em> Betti realization functors.",
+        "title": {
+          "en": "Isovariant Homotopy Theory",
+          "fr": "Théorie de l'homotopie isovariante"
+        },
+        "description": {
+          "en": "I developped a simplicial approach to $$C_2$$-isovariant homotopy theory. This framework is meant to study spaces with an involution (action of the group $$C_2$$) where isotropy groups are preserved strictly. I'm currently working on extending this theory to arbitrary profinite groups and exploring connections with real algebraic geometry by means of <em> isovariant </em> Betti realization functors.",
+          "fr": "J'ai développé une approche simpliciale de la théorie de l'homotopie $$C_2$$-isovariante. Ce cadre est destiné à étudier les espaces avec une involution (action du groupe $$C_2$$) où les groupes d'isotropie sont préservés strictement. Je travaille actuellement sur l'extension de cette théorie aux groupes profinis arbitraires et l'exploration des connexions avec la géométrie algébrique réelle au moyen de foncteurs de réalisation de Betti de type <em> isovariants </em>."
+        },
         "keywords": ["Isovariant Homotopy", "Model Categories"]
       },
        {
-        "title": "Derived categories for real spaces",
-        "description": "In collaboration with [Pierre Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) we are currently exploring the construction of a derived category of sheaves with transfers over <em> real spaces </em> (in the sense of [Huisman](https://huisman.perso.math.cnrs.fr/), [Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) and Gleuher). This theory is meant to be an analogue of Voevodsky's derived category of motives but for <em> complexified </em> real analytic spaces and it should enhance the existing cohomology theory of real spaces developed by Martinez and Gleuher.",
+        "title": {
+          "en": "Derived categories for real spaces",
+          "fr": "Catégories dérivées pour les espaces réels"
+        },
+        "description": {
+          "en": "In collaboration with [Pierre Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) we are currently exploring the construction of a derived category of sheaves with transfers over <em> real spaces </em> (in the sense of [Huisman](https://huisman.perso.math.cnrs.fr/), [Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) and Gleuher). This theory is meant to be an analogue of Voevodsky's derived category of motives but for <em> complexified </em> real analytic spaces and it should enhance the existing cohomology theory of real spaces developed by Martinez and Gleuher.",
+          "fr": "En collaboration avec [Pierre Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez), nous explorons actuellement la construction d'une catégorie dérivée de faisceaux avec transferts sur les <em> espaces réels </em> (au sens de [Huisman](https://huisman.perso.math.cnrs.fr/), [Martinez](https://www.univ-brest.fr/departement-mathematiques/fr/membre/pierre-martinez) et Gleuher). Cette théorie est conçue comme un analogue de la catégorie dérivée des motifs de Voevodsky mais pour les espaces analytiques réels <em> complexifiés </em> et devrait améliorer la théorie de cohomologie existante des espaces réels développée par Martinez et Gleuher."
+        },
         "keywords": ["Real spaces", "Derived categories", "Motivic cohomology"]
       },
       {
-        "title": "Cartesian Fibrations in Higher Category Theory",
-        "description": "I'm interested in the theory of cartesian fibrations in the setting of 2-categories and higher categories. In particular, I'm working in a collaborative project with M. Sarazola, P. Verdugo, J. Nickel, D. Teixeira and C. Bardomiano on the construction of a model category structure for 2-cartesian fibrations over a fixed base 2-category. ",
+        "title": {
+          "en": "Cartesian Fibrations in Higher Category Theory",
+          "fr": "Fibrations cartésiennes en théorie des catégories supérieures"
+        },
+        "description": {
+          "en": "I'm interested in the theory of cartesian fibrations in the setting of 2-categories and higher categories. In particular, I'm working in a collaborative project with M. Sarazola, P. Verdugo, J. Nickel, D. Teixeira and C. Bardomiano on the construction of a model category structure for 2-cartesian fibrations over a fixed base 2-category.",
+          "fr": "Je m'intéresse à la théorie des fibrations cartésiennes dans le cadre des 2-catégories et des catégories supérieures. En particulier, je travaille sur un projet collaboratif avec M. Sarazola, P. Verdugo, J. Nickel, D. Teixeira et C. Bardomiano sur la construction d'une structure de catégorie modèle pour les fibrations 2-cartésiennes sur une 2-catégorie de base fixe."
+        },
         "keywords": ["2-categories", "cartesian fibrations", "model categories"]
       },
       {
-        "title": "Homotopy Theory of Enriched virtual Double Categories",
-        "description": "I'm also exploring the homotopy theory of enriched virtual double categories (or fc-multicategories). In particular, I'm currently investigating the construction of model category structures for these objects and their applications to higher category theory.",
+        "title": {
+          "en": "Homotopy Theory of Enriched virtual Double Categories",
+          "fr": "Théorie de l'homotopie des doubles catégories virtuelles enrichies"
+        },
+        "description": {
+          "en": "I'm also exploring the homotopy theory of enriched virtual double categories (or fc-multicategories). In particular, I'm currently investigating the construction of model category structures for these objects and their applications to higher category theory.",
+          "fr": "J'explore également la théorie de l'homotopie des catégories enrichies sur doubles catégories virtuelles (ou fc-multicatégories). En particulier, j'étudie actuellement la construction de structures de catégorie modèle pour ces objets et leurs applications à la théorie des catégories supérieures."
+        },
         "keywords": ["Enriched virtual double categories", "Model categories"]
       }
     ],
@@ -40,21 +73,33 @@
       {
         "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
         "authors": ["Santiago Toro"],
-        "venue": "Submitted, 2024",
-        "abstract": "This article presents a novel approach to construct a model category structure designed to model the homotopy theory of spaces equipped with an action by the group $$C_2$$, where morphisms are considered to be isovariant. Our methodology centers on simplicial techniques. We replace the conventional simplex category $$\\Delta$$ with a modified category $$C_2 \\Delta$$ and then delve into the study of presheaves of sets on $$C_2 \\Delta$$. To establish the model category structure we employ Cisinski's methods for model structures in categories of presheaves. In particular, we use an analogous idea to the one employed by Cisinski and Moerdjik in the construction of a model category structure for [Dendroidal Sets](https://arxiv.org/abs/0902.1954). Our approach distinguishes itself from prior work, such as [Yeakel's](https://arxiv.org/abs/1907.12135) which primarily focuses on a more topological context and, brings a new perspective to the study of isovariant homotopy theory for $$C_2$$-spaces.",
+        "venue": {
+          "en": "Submitted, 2024",
+          "fr": "Soumis, 2024"
+        },
+        "abstract": {
+          "en": "This article presents a novel approach to construct a model category structure designed to model the homotopy theory of spaces equipped with an action by the group $$C_2$$, where morphisms are considered to be isovariant. Our methodology centers on simplicial techniques. We replace the conventional simplex category $$\\Delta$$ with a modified category $$C_2 \\Delta$$ and then delve into the study of presheaves of sets on $$C_2 \\Delta$$. To establish the model category structure we employ Cisinski's methods for model structures in categories of presheaves. In particular, we use an analogous idea to the one employed by Cisinski and Moerdjik in the construction of a model category structure for [Dendroidal Sets](https://arxiv.org/abs/0902.1954). Our approach distinguishes itself from prior work, such as [Yeakel's](https://arxiv.org/abs/1907.12135) which primarily focuses on a more topological context and, brings a new perspective to the study of isovariant homotopy theory for $$C_2$$-spaces.",
+          "fr": "Cet article présente une nouvelle approche pour construire une structure de catégorie modèle conçue pour modéliser la théorie de l'homotopie des espaces équipés d'une action du groupe $$C_2$$, où les morphismes sont considérés comme isovariants. Notre méthodologie se concentre sur les techniques simpliciales. Nous remplaçons la catégorie de simplexes conventionnelle $$\\Delta$$ par une catégorie modifiée $$C_2 \\Delta$$ et nous nous plongeons ensuite dans l'étude des préfaisceaux d'ensembles sur $$C_2 \\Delta$$. Pour établir la structure de catégorie modèle, nous employons les méthodes de Cisinski pour les structures de modèles dans les catégories de préfaisceaux. En particulier, nous utilisons une idée analogue à celle employée par Cisinski et Moerdjik dans la construction d'une structure de catégorie modèle pour les [ensembles dendroïdaux](https://arxiv.org/abs/0902.1954). Notre approche se distingue des travaux antérieurs, tels que celui de [Yeakel](https://arxiv.org/abs/1907.12135) qui se concentre principalement sur un contexte plus topologique, et apporte une nouvelle perspective à l'étude de la théorie de l'homotopie isovariante pour les espaces $$C_2$$."
+        },
         "links": [{ "type": "arXiv", "url": "https://arxiv.org/abs/2312.08133" }]
       },
       {
         "title": "A model structure for 2 cartesian fibrations",
         "authors": ["C. Bardomiano", "J. Nickel", "M. Sarazola", "P. Verdugo", "D. Teixeira", "S. Toro Oquendo"],
-        "venue": "In preparation",
+        "venue": {
+          "en": "In preparation",
+          "fr": "En préparation"
+        },
         "abstract": "",
         "links": []
       },
       {
         "title": "Derived categories for real spaces",
         "authors": ["P. Martinez", "S. Toro Oquendo"],
-        "venue": "In preparation",
+        "venue": {
+          "en": "In preparation",
+          "fr": "En préparation"
+        },
         "abstract": "",
         "links": []
       }
@@ -62,7 +107,10 @@
     "currentProjects": [
       {
         "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
-        "description": "This project focuses on developing a simplicial framework for $$C_2$$-isovariant homotopy theory, aiming to extend the theory to arbitrary profinite groups and explore connections with real algebraic geometry through isovariant Betti realization functors."
+        "description": {
+          "en": "This project focuses on developing a simplicial framework for $$C_2$$-isovariant homotopy theory, aiming to extend the theory to arbitrary profinite groups and explore connections with real algebraic geometry through isovariant Betti realization functors.",
+          "fr": "Ce projet se concentre sur le développement d'un cadre simplicial pour la théorie de l'homotopie isovariante $$C_2$$, visant à étendre la théorie aux groupes profinis arbitraires et à explorer les connexions avec la géométrie algébrique réelle à travers les foncteurs de réalisation de Betti isovariants."
+        }
       }
     ],
     "disableCurrentProjects": true,
@@ -71,23 +119,38 @@
         "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
         "authors": ["Santiago Toro Oquendo"],
         "advisor": "Johannes Huisman",
-        "venue": "PhD Thesis, Université de Bretagne Occidentale, 2024",
+        "venue": {
+          "en": "PhD Thesis, Université de Bretagne Occidentale, 2024",
+          "fr": "Thèse de doctorat, Université de Bretagne Occidentale, 2024"
+        },
         "abstract": "",
         "links": [{ "type": "HAL", "url": "https://theses.hal.science/tel-05016432v1" }]
       },
       {
-        "title": "Applications of motivic homotopy theory to arithmetic counts of lines",
+        "title": {
+          "en": "Applications of motivic homotopy theory to arithmetic counts of lines",
+          "fr": "Applications de la théorie de l'homotopie motivique aux comptages arithmétiques de droites"
+        },
         "authors": ["Santiago Toro Oquendo"],
         "advisor": "Johannes Huisman & Jean Fasel",
-        "venue": "Master's Thesis, Université Grenoble Alpes, 2019",
+        "venue": {
+          "en": "Master's Thesis, Université Grenoble Alpes, 2019",
+          "fr": "Mémoire de master, Université Grenoble Alpes, 2019"
+        },
         "abstract": "",
         "links": [{ "url": "./files/Master_thesis_Grenoble.pdf", "type": "PDF" }]
       },
       {
-        "title": "The Riemann-Roch theorem for curves (in Spanish)",
+        "title": {
+          "en": "The Riemann-Roch theorem for curves (in Spanish)",
+          "fr": "Le théorème de Riemann-Roch pour les courbes (en espagnol)"
+        },
         "authors": ["Santiago Toro Oquendo"],
         "advisor": "Margarita Toro",
-        "venue": "Bachelor's Thesis, Universidad Nacional de Colombia, 2015",
+        "venue": {
+          "en": "Bachelor's Thesis, Universidad Nacional de Colombia, 2015",
+          "fr": "Mémoire de licence, Universidad Nacional de Colombia, 2015"
+        },
         "abstract": "",
         "links": [{ "url": "./files/Tdg_versionweb.pdf", "type": "PDF" }]
       }
@@ -103,7 +166,10 @@
     }
   },
   "teaching": {
-    "philosophy": "I believe that mathematics is best learned through active engagement and discovery. My teaching approach emphasizes conceptual understanding over rote memorization, encouraging students to develop their problem-solving abilities and mathematical intuition.\n\nIn my classes, I strive to create an inclusive environment where students feel comfortable asking questions and making mistakes.",
+    "philosophy": {
+      "en": "I believe that mathematics is best learned through active engagement and discovery. My teaching approach emphasizes conceptual understanding over rote memorization, encouraging students to develop their problem-solving abilities and mathematical intuition.\n\nIn my classes, I strive to create an inclusive environment where students feel comfortable asking questions and making mistakes.",
+      "fr": "Je crois que les mathématiques s'apprennent mieux par l'engagement actif et la découverte. Mon approche pédagogique met l'accent sur la compréhension conceptuelle plutôt que sur la mémorisation par cœur, encourageant les étudiants à développer leurs capacités de résolution de problèmes et leur intuition mathématique.\n\nDans mes cours, je m'efforce de créer un environnement inclusif où les étudiants se sentent à l'aise pour poser des questions et faire des erreurs."
+    },
     "disableTeachingPhilosophy": true,
     "officeHours": {
       "schedule": [
@@ -117,16 +183,28 @@
     },
     "currentCourses": [
       {
-        "title": "Methods for Mathematics and Computer Science",
+        "title": {
+          "en": "Methods for Mathematics and Computer Science",
+          "fr": "Méthodes et outils pour les mathématiques et l'informatique"
+        },
         "schedule": "TD3: Mon 09:00-10:30 and Thu 11:30-13:00; TD4: Mon 10:55-12:15 and Wed 09:00-10:30",
-        "description": "Material for the course can be found in [Moodle](https://moodle.univ-artois.fr/). The course covers basic concepts in logic, set theory, arithmetic and polynomials.",
+        "description": {
+          "en": "Material for the course can be found in [Moodle](https://moodle.univ-artois.fr/). The course covers basic concepts in logic, set theory, arithmetic and polynomials.",
+          "fr": "Le matériel du cours est disponible sur [Moodle](https://moodle.univ-artois.fr/). Le cours couvre les concepts de base en logique, théorie des ensembles, arithmétique et polynômes."
+        },
         "keywords": [],
         "materials": []
       },
       {
-        "title": "Linear Algebra",
+        "title": {
+          "en": "Linear Algebra",
+          "fr": "Algèbre linéaire"
+        },
         "schedule": "Winter 2026",
-        "description": "",
+        "description": {
+          "en": "Here's some material for the course. The course covers basic concepts in Linear Algebra such as vector spaces, systems of linear equations, matrices and linear transformations.\n\n<br>\n\n| Fiche de TD | Corrections |\n|-------------|-------------|\n| TD 1 | Correction 1 |\n| TD 2 | Correction 2 |\n| TD 3 | Correction 3 |\n| TD 4 | Correction 4 |\n| TD 5 | Correction 5 |",
+          "fr": "Voici le matériel du cours. Le cours couvre les concepts de base de l'algèbre linéaire tels que les espaces vectoriels, les systèmes d'équations linéaires, les matrices et les transformations linéaires.\n\n<br>\n\n| Fiche de TD | Corrections |\n|-------------|-------------|\n| [TD 1](./files/Fiche_1_2026.pdf) | Correction 1 |\n| [TD 2](.files/Fiche_2_2026) | Correction 2 |\n| TD 3 | Correction 3 |\n| TD 4 | Correction 4 |\n| TD 5 | Correction 5 |"
+        },
         "keywords": [],
         "materials": []
       }
@@ -135,27 +213,27 @@
       {
         "university": "Université d'Angers",
         "courses": [
-          { "title": "Analytic Geometry", "terms": ["Fall 2022", "Fall 2023"] },
-          { "title": "Arithmetic over $$\\mathbb{Z}$$", "terms": ["Fall 2022","Fall 2023"] },
-          { "title": "Arithmetic of polynomials", "terms": ["Winter 2023","Spring 2023"] },
-          { "title": "Fundamentals of Analysis", "terms": ["Fall 2023"] },
-          { "title": "Mathematics for Life and Earth Sciences", "terms": ["Spring 2023", "Spring 2024"] },
-          { "title": "Linear Algebra", "terms": ["Fall 2022"] }
+          { "title": { "en": "Analytic Geometry", "fr": "Géométrie analytique" }, "terms": ["Fall 2022", "Fall 2023"] },
+          { "title": { "en": "Arithmetic over $$\\mathbb{Z}$$", "fr": "Arithmétique sur $$\\mathbb{Z}$$" }, "terms": ["Fall 2022","Fall 2023"] },
+          { "title": { "en": "Arithmetic of polynomials", "fr": "Arithmétique des polynômes" }, "terms": ["Winter 2023","Spring 2023"] },
+          { "title": { "en": "Fundamentals of Analysis", "fr": "Fondements de l'analyse" }, "terms": ["Fall 2023"] },
+          { "title": { "en": "Mathematics for Life and Earth Sciences", "fr": "Mathématiques pour les sciences de la vie et de la terre" }, "terms": ["Spring 2023", "Spring 2024"] },
+          { "title": { "en": "Linear Algebra", "fr": "Algèbre linéaire" }, "terms": ["Fall 2022"] }
         ]
       },
       {
         "university": "Université de Bretagne Occidentale",
         "courses": [
-          { "title": "General Mathematics", "terms": ["Fall 2021"] },
-          { "title": "Analysis I", "terms": ["Spring 2022"] }
+          { "title": { "en": "General Mathematics", "fr": "Mathématiques générales" }, "terms": ["Fall 2021"] },
+          { "title": { "en": "Analysis I", "fr": "Analyse I" }, "terms": ["Spring 2022"] }
         ]
       },
       {
         "university": "Universidad Nacional de Colombia, sede Medellín",
         "courses": [
-          { "title": "Linear Algebra", "terms": ["Spring 2016", "Fall 2016"] },
-          { "title": "Differential Calculus", "terms": ["Spring 2017"] },
-          { "title": "Integral Calculus", "terms": ["Fall 2017"] }
+          { "title": { "en": "Linear Algebra", "fr": "Algèbre linéaire" }, "terms": ["Spring 2016", "Fall 2016"] },
+          { "title": { "en": "Differential Calculus", "fr": "Calcul différentiel" }, "terms": ["Spring 2017"] },
+          { "title": { "en": "Integral Calculus", "fr": "Calcul intégral" }, "terms": ["Fall 2017"] }
         ]
       }
     ],

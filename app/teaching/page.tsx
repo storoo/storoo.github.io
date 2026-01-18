@@ -1,3 +1,5 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -5,9 +7,11 @@ import { Button } from "@/components/ui/button"
 import { FileText, Clock, Users, Calendar } from "lucide-react"
 import { getTeachingData } from "@/lib/site-data"
 import { RichContent } from "@/components/rich-content"
+import { useLanguage } from "@/lib/language-context"
 
 export default function TeachingPage() {
-  const teaching = getTeachingData()
+  const { language } = useLanguage()
+  const teaching = getTeachingData(language)
   const showCurrentCourses = !((teaching as any).disableCurrentCourses) && teaching.currentCourses && teaching.currentCourses.length > 0
   const showOfficeHours = !((teaching as any).disableOfficeHours || (teaching.officeHours as any)?.disableOfficeHours) && teaching.officeHours && teaching.officeHours.schedule && teaching.officeHours.schedule.length > 0
   const showResources = !((teaching as any).disableResources) && teaching.resources && teaching.resources.length > 0
@@ -23,16 +27,17 @@ export default function TeachingPage() {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Page Header */}
         <div className="max-w-4xl mx-auto mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4 font-serif">Teaching</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4 font-serif">{language === 'en' ? 'Teaching' : 'Enseignement'}</h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I am passionate about mathematics education and believe in making complex concepts accessible to students at all levels. My teaching philosophy emphasizes understanding over memorization and encourages students to
-            develop problem-solving skills.
+            {language === 'en' 
+              ? 'I am passionate about mathematics education and believe in making complex concepts accessible to students at all levels. My teaching philosophy emphasizes understanding over memorization and encourages students to develop problem-solving skills.'
+              : 'Passionné par la pédagogie des mathématiques, je m\'efforce de rendre les concepts complexes accessibles à tous. Mon approche met l\'accent sur la compréhension fondamentale au détriment du "par cœur", tout en développant l\'esprit d\'analyse et de résolution de problèmes des étudiants.'}
           </p>
         </div>
 
         {showCurrentCourses && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif"> Current Courses (Fall - Spring 2025)</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{language === 'en' ? 'Current Courses (Fall - Spring 2025)' : 'Cours actuels (Automne - Printemps 2025)'}</h2>
             <div className="space-y-6">
               {teaching.currentCourses.map((course, index) => (
                 <Card key={index}>
