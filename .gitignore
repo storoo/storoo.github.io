@@ -31,3 +31,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# draft teaching materials
+public/teaching/files/Fiche_2_cor.pdf
