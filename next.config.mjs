@@ -25,6 +25,12 @@ const nextConfig = {
   compiler: { removeConsole: isProd },
   experimental: { webpackBuildWorker: false },
   webpack: (config, { isServer, dev }) => {
+    // Allow importing .md files as raw text strings
+    config.module.rules.push({
+      test: /\.md$/,
+      type: 'asset/source',
+    })
+
     if (dev) {
       config.cache = { type: 'memory' }
     } else {

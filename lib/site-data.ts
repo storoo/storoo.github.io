@@ -1,4 +1,5 @@
 import siteConfig from "@/data/site-config.json"
+import teachingContent from "@/data/teaching/content"
 
 export type SiteConfig = typeof siteConfig
 export type Language = 'en' | 'fr'
@@ -85,10 +86,25 @@ export function getResearchData(language?: Language) {
 }
 
 export function getTeachingData(language?: Language) {
-  if (language) {
-    return localizeObject(siteConfig.teaching, language)
+  // Resolve contentRef fields: if a course has a contentRef, load the
+  // description from the external markdown files instead of the JSON.
+  const teaching = JSON.parse(JSON.stringify(siteConfig.teaching))
+  if (teaching.currentCourses) {
+    for (const course of teaching.currentCourses) {
+      if ((course as any).contentRef) {
+        const ref = (course as any).contentRef as string
+        const content = teachingContent[ref]
+        if (content) {
+          course.description = { en: content.en, fr: content.fr } as any
+        }
+      }
+    }
   }
-  return siteConfig.teaching
+
+  if (language) {
+    return localizeObject(teaching, language)
+  }
+  return teaching
 }
 
 export function getEtcData(language?: Language) {
