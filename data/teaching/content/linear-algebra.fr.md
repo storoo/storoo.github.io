@@ -10,6 +10,7 @@ Voici le matériel du cours. Le cours couvre les concepts de base de l'algèbre 
 | [DS Février](./files/DSAL_2026.pdf) | [Correction](./files/AL_DS2026_cor.pdf) |
 | [TD 4](./files/Fiche_4_2026.pdf) | [Correction](./files/Fiche_4_cor.pdf) |
 | [TD 5](./files/Fiche_5_2026.pdf) | [Correction](./files/Fiche_5_cor.pdf) |
+| [TD 6](./files/Fiche_6_2026.pdf) |  |
 
 <br><br>
 

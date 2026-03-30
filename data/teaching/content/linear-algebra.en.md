@@ -10,6 +10,7 @@ Here's some material for the course. The course covers basic concepts in Linear 
 | [DS Février](./files/DSAL_2026.pdf) | [Solutions](./files/AL_DS2026_cor.pdf) |
 | [TD 4](./files/Fiche_4_2026.pdf) | [Solutions](./files/Fiche_4_cor.pdf) |
 | [TD 5](./files/Fiche_5_2026.pdf) | [Solutions](./files/Fiche_5_cor.pdf) |
+| [TD 6](./files/Fiche_6_2026.pdf) |  |
 
 <br><br>
 
