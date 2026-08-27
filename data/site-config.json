@@ -181,36 +181,79 @@
       "note": "Or by appointment - email me to schedule a meeting",
       "disableOfficeHours": true
     },
+    "currentCoursesHeading": {
+      "en": "Current Courses (2026–2027)",
+      "fr": "Cours actuels (2026–2027)"
+    },
+    "pastCoursesHeading": {
+      "en": "Previously Taught Courses",
+      "fr": "Cours enseignés précédemment"
+    },
+    "_howToAddACourse": "See TEACHING_GUIDE.md at the root of the repository. Short version: (1) create data/teaching/content/<slug>.en.md and <slug>.fr.md; (2) register both in data/teaching/content/index.ts; (3) copy one entry from currentCourses below and set \"slug\" and \"contentRef\" to <slug>. The page /teaching/<slug> is generated automatically. Use \"semester\" to group courses under a sub-heading (Semester 1 / Semester 2): courses sharing the same \"semester\" value are shown together, in the order listed here. To archive a course at the end of the year, move its entry into the matching university block of \"pastCourses\" and replace \"semester\" with \"terms\" — its page and its files stay where they are.",
     "currentCourses": [
       {
+        "slug": "differential-equations-optimization",
+        "contentRef": "differential-equations-optimization",
         "title": {
-          "en": "Methods for Mathematics and Computer Science",
-          "fr": "Méthodes et outils pour les mathématiques et l'informatique"
+          "en": "Differential Equations and Optimization",
+          "fr": "Équations différentielles et optimisation"
         },
-        "schedule": "TD3: Mon 09:00-10:30 and Thu 11:30-13:00; TD4: Mon 10:55-12:15 and Wed 09:00-10:30",
-        "description": {
-          "en": "Material for the course can be found in [Moodle](https://moodle.univ-artois.fr/). The course covers basic concepts in logic, set theory, arithmetic and polynomials.",
-          "fr": "Le matériel du cours est disponible sur [Moodle](https://moodle.univ-artois.fr/). Le cours couvre les concepts de base en logique, théorie des ensembles, arithmétique et polynômes."
+        "semester": {
+          "en": "Semester 1",
+          "fr": "Semestre 1"
+        },
+        "schedule": "",
+        "summary": {
+          "en": "Ordinary differential equations and optimization methods. Click the course title for the material.",
+          "fr": "Équations différentielles ordinaires et méthodes d'optimisation. Cliquez sur le titre du cours pour accéder au matériel."
         },
         "keywords": [],
         "materials": []
       },
       {
+        "slug": "functions-real-variable",
+        "contentRef": "functions-real-variable",
         "title": {
-          "en": "Linear Algebra",
-          "fr": "Algèbre linéaire"
+          "en": "Functions of a Real Variable",
+          "fr": "Fonctions d'une variable réelle"
         },
-        "schedule": "Winter 2026",
-        "contentRef": "linear-algebra",
-        "description": {
-          "en": "Content loaded from data/teaching/content/linear-algebra.en.md",
-          "fr": "Content loaded from data/teaching/content/linear-algebra.fr.md"
+        "semester": {
+          "en": "Semester 1",
+          "fr": "Semestre 1"
+        },
+        "schedule": "",
+        "summary": {
+          "en": "Limits, continuity, differentiability, Taylor expansions and integration. Click the course title for the material.",
+          "fr": "Limites, continuité, dérivabilité, développements limités et intégration. Cliquez sur le titre du cours pour accéder au matériel."
         },
         "keywords": [],
         "materials": []
       }
     ],
     "pastCourses": [
+      {
+        "university": "Université d'Artois",
+        "courses": [
+          {
+            "slug": "methods-math-cs",
+            "contentRef": "methods-math-cs",
+            "title": { "en": "Methods for Mathematics and Computer Science", "fr": "Méthodes et outils pour les mathématiques et l'informatique" },
+            "terms": ["Fall 2025"],
+            "schedule": "TD3: Mon 09:00-10:30 and Thu 11:30-13:00; TD4: Mon 10:55-12:15 and Wed 09:00-10:30",
+            "keywords": [],
+            "materials": []
+          },
+          {
+            "slug": "linear-algebra",
+            "contentRef": "linear-algebra",
+            "title": { "en": "Linear Algebra", "fr": "Algèbre linéaire" },
+            "terms": ["Winter 2026"],
+            "schedule": "Winter 2026",
+            "keywords": [],
+            "materials": []
+          }
+        ]
+      },
       {
         "university": "Université d'Angers",
         "courses": [

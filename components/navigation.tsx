@@ -14,6 +14,13 @@ const navigationItems = [
   { name: { en: "Etc", fr: "Etc" }, href: "/etc" },
 ] as const
 
+// A nav item stays highlighted on its sub-pages too, e.g. /teaching stays
+// active while viewing a course page such as /teaching/linear-algebra.
+// Trailing slashes are handled (next.config.mjs sets trailingSlash: true).
+function isActive(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(href + "/")
+}
+
 const Navigation = memo(function Navigation() {
   const pathname = usePathname()
   const { language } = useLanguage()
@@ -46,7 +53,7 @@ const Navigation = memo(function Navigation() {
                   href={item.href}
                   className={cn(
                     "px-3 py-2 rounded-md text-sm font-medium transition-colors",
-                    pathname === item.href
+                    isActive(pathname, item.href)
                       ? "text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800/60"
                       : "text-foreground hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800/60",
                   )}
@@ -109,7 +116,7 @@ const MobileMenu = memo(function MobileMenu() {
                 onClick={() => setIsOpen(false)}
                 className={cn(
                   "block px-4 py-2 text-sm rounded-md transition-colors",
-                  pathname === item.href
+                  isActive(pathname, item.href)
                     ? "text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800/60"
                     : "text-foreground hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800/60",
                 )}

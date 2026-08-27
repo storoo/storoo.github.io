@@ -1,10 +1,11 @@
 "use client"
 
+import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { FileText, Clock, Users, Calendar } from "lucide-react"
+import { FileText, Clock, Users, Calendar, ArrowRight } from "lucide-react"
 import { getTeachingData } from "@/lib/site-data"
 import { RichContent } from "@/components/rich-content"
 import { useLanguage } from "@/lib/language-context"
@@ -19,6 +20,27 @@ export default function TeachingPage() {
   const showPastCourses = !((teaching as any).disablePastCourses) && pastCourseBlocks.length > 0
   const showPhilosophy = !((teaching as any).disableTeachingPhilosophy) && !!teaching.philosophy
   const showSupportSection = (showOfficeHours || showResources)
+
+  // Section headings come from site-config.json so the academic year can be
+  // updated without touching this file.
+  const currentCoursesHeading = (teaching as any).currentCoursesHeading
+    || (language === 'en' ? 'Current Courses' : 'Cours actuels')
+  const pastCoursesHeading = (teaching as any).pastCoursesHeading
+    || (language === 'en' ? 'Previously Taught Courses' : 'Cours enseignés précédemment')
+
+  // Current courses are grouped by their "semester" field, in the order they
+  // appear in the config. Courses without one land in a single unlabelled group.
+  const semesterGroups: { label: string; courses: any[] }[] = []
+  for (const course of (teaching.currentCourses ?? []) as any[]) {
+    const label = typeof course.semester === 'string' ? course.semester : ''
+    let group = semesterGroups.find((g) => g.label === label)
+    if (!group) {
+      group = { label, courses: [] }
+      semesterGroups.push(group)
+    }
+    group.courses.push(course)
+  }
+  const showSemesterLabels = semesterGroups.some((g) => g.label !== '')
 
   return (
     <div className="min-h-screen bg-background">
@@ -37,51 +59,77 @@ export default function TeachingPage() {
 
         {showCurrentCourses && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{language === 'en' ? 'Current Courses (Fall - Spring 2025)' : 'Cours actuels (Automne - Printemps 2025)'}</h2>
-            <div className="space-y-6">
-              {teaching.currentCourses.map((course, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <CardTitle className="text-xl mb-1">
-                          <RichContent inline source={course.title} currentPage="teaching" />
-                        </CardTitle>
-                        <div className="flex items-center text-sm text-muted-foreground mb-2">
-                          <Calendar className="w-4 h-4 mr-1" />
-                          {course.schedule}
-                        </div>
-                        {/* <div className="flex items-center text-sm text-muted-foreground">
-                          <Users className="w-4 h-4 mr-1" /> 
-                          {course.enrollment} students enrolled
-                        </div> */}
-                      </div>
-                      <Badge>Current</Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-muted-foreground mb-1 prose prose-neutral dark:prose-invert">
-                      <RichContent source={course.description} currentPage="teaching" />
-                    </div>
-                    <div className="flex flex-wrap gap-2 mb-1">
-                      {course.keywords.map((keyword, keyIndex) => (
-                        <Badge key={keyIndex} variant="secondary">
-                          {keyword}
-                        </Badge>
-                      ))}
-                    </div>
-                    <div className="flex gap-2">
-                      {course.materials.map((material, materialIndex) => (
-                        <Button key={materialIndex} variant="outline" size="sm" asChild>
-                          <a href={material.url} target="_blank" rel="noreferrer">
-                            <FileText className="w-4 h-4 mr-1" />
-                            {material.type}
-                          </a>
-                        </Button>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{currentCoursesHeading}</h2>
+            <div className="space-y-10">
+              {semesterGroups.map((group, groupIndex) => (
+                <div key={groupIndex}>
+                  {showSemesterLabels && group.label && (
+                    <h3 className="text-lg font-medium text-muted-foreground mb-4 font-serif">{group.label}</h3>
+                  )}
+                  <div className="space-y-6">
+                    {group.courses.map((course: any, index: number) => (
+                      <Card key={index}>
+                        <CardHeader>
+                          <div className="flex items-start justify-between gap-4">
+                            <div>
+                              <CardTitle className="text-xl mb-1">
+                                {course.slug ? (
+                                  <Link href={`/teaching/${course.slug}`} className="hover:underline">
+                                    <RichContent inline source={course.title} currentPage="teaching" />
+                                  </Link>
+                                ) : (
+                                  <RichContent inline source={course.title} currentPage="teaching" />
+                                )}
+                              </CardTitle>
+                              {course.schedule && (
+                                <div className="flex items-center text-sm text-muted-foreground mb-2">
+                                  <Calendar className="w-4 h-4 mr-1" />
+                                  {course.schedule}
+                                </div>
+                              )}
+                              {/* <div className="flex items-center text-sm text-muted-foreground">
+                                <Users className="w-4 h-4 mr-1" /> 
+                                {course.enrollment} students enrolled
+                              </div> */}
+                            </div>
+                            <Badge className="shrink-0">{language === 'en' ? 'Current' : 'En cours'}</Badge>
+                          </div>
+                        </CardHeader>
+                        <CardContent className="space-y-3">
+                          {/* A short blurb only: the full material lives on the course page.
+                              Courses written directly in the JSON (no contentRef) still show
+                              their description here. */}
+                          {(course.summary || (!course.contentRef && course.description)) && (
+                            <div className="text-muted-foreground prose prose-neutral dark:prose-invert">
+                              <RichContent source={course.summary || course.description} currentPage="teaching" />
+                            </div>
+                          )}
+                          {course.keywords?.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                              {course.keywords.map((keyword: string, keyIndex: number) => (
+                                <Badge key={keyIndex} variant="secondary">
+                                  {keyword}
+                                </Badge>
+                              ))}
+                            </div>
+                          )}
+                          {course.materials?.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                              {course.materials.map((material: any, materialIndex: number) => (
+                                <Button key={materialIndex} variant="outline" size="sm" asChild>
+                                  <a href={material.url} target="_blank" rel="noreferrer">
+                                    <FileText className="w-4 h-4 mr-1" />
+                                    {material.type}
+                                  </a>
+                                </Button>
+                              ))}
+                            </div>
+                          )}
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </section>
@@ -101,7 +149,7 @@ export default function TeachingPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-2 text-muted-foreground">
-                      {teaching.officeHours.schedule.map((slot, index) => (
+                      {teaching.officeHours.schedule.map((slot: any, index: number) => (
                         <p key={index}>
                           <strong>{slot.day}:</strong> {slot.time}
                         </p>
@@ -121,7 +169,7 @@ export default function TeachingPage() {
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2 text-muted-foreground">
-                      {teaching.resources.map((resource, index) => (
+                      {teaching.resources.map((resource: string, index: number) => (
                         <li key={index}>• {resource}</li>
                       ))}
                     </ul>
@@ -138,7 +186,7 @@ export default function TeachingPage() {
 
         {showPastCourses && (
           <section className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">Previously Taught Courses</h2>
+            <h2 className="text-2xl font-semibold text-foreground mb-8 font-serif">{pastCoursesHeading}</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {pastCourseBlocks.map((block: any, i: number) => (
                 <Card key={i}>
@@ -149,8 +197,16 @@ export default function TeachingPage() {
                     <ul className="space-y-3">
                       {block.courses?.map((course: any, ci: number) => (
                         <li key={ci} className="border-l-2 border-accent pl-3">
+                          {/* Archived courses that kept a slug still have their own page. */}
                           <div className="font-medium">
-                            <RichContent inline source={course.title} />
+                            {course.slug ? (
+                              <Link href={`/teaching/${course.slug}`} className="hover:underline inline-flex items-baseline gap-1">
+                                <RichContent inline source={course.title} currentPage="teaching" />
+                                <ArrowRight className="w-3 h-3 self-center shrink-0" />
+                              </Link>
+                            ) : (
+                              <RichContent inline source={course.title} />
+                            )}
                           </div>
                           {course.terms?.length > 0 && (
                             <div className="text-sm text-muted-foreground">{course.terms.join(", ")}</div>

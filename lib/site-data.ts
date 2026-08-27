@@ -85,19 +85,54 @@ export function getResearchData(language?: Language) {
   return research
 }
 
+/**
+ * A single course, either currently taught (`isCurrent`) or archived.
+ * Courses live in site-config.json under teaching.currentCourses and
+ * teaching.pastCourses[].courses. Any course carrying a `slug` also gets
+ * its own generated page at /teaching/<slug>.
+ */
+export interface TeachingCourse {
+  slug?: string
+  contentRef?: string
+  title: LocalizedText
+  semester?: LocalizedText
+  terms?: string[]
+  schedule?: string
+  summary?: LocalizedText
+  description?: LocalizedText
+  keywords?: string[]
+  materials?: Array<{ type: LocalizedText; url: string }>
+}
+
+export interface CourseEntry extends TeachingCourse {
+  slug: string
+  university?: string
+  isCurrent: boolean
+}
+
+/**
+ * If a course declares a `contentRef`, its long description is pulled from
+ * data/teaching/content/<ref>.{en,fr}.md instead of from the JSON.
+ */
+function resolveCourseContent(course: any) {
+  if (course?.contentRef) {
+    const content = teachingContent[course.contentRef as string]
+    if (content) {
+      course.description = { en: content.en, fr: content.fr }
+    }
+  }
+  return course
+}
+
 export function getTeachingData(language?: Language) {
-  // Resolve contentRef fields: if a course has a contentRef, load the
-  // description from the external markdown files instead of the JSON.
-  const teaching = JSON.parse(JSON.stringify(siteConfig.teaching))
-  if (teaching.currentCourses) {
-    for (const course of teaching.currentCourses) {
-      if ((course as any).contentRef) {
-        const ref = (course as any).contentRef as string
-        const content = teachingContent[ref]
-        if (content) {
-          course.description = { en: content.en, fr: content.fr } as any
-        }
-      }
+  const teaching = JSON.parse(JSON.stringify(siteConfig.teaching)) as any
+
+  for (const course of teaching.currentCourses ?? []) {
+    resolveCourseContent(course)
+  }
+  for (const block of teaching.pastCourses ?? []) {
+    for (const course of block.courses ?? []) {
+      resolveCourseContent(course)
     }
   }
 
@@ -105,6 +140,37 @@ export function getTeachingData(language?: Language) {
     return localizeObject(teaching, language)
   }
   return teaching
+}
+
+/**
+ * Every course that has its own page, current ones first.
+ * Used both for rendering a course page and for generating the static routes.
+ */
+export function getAllCourses(language?: Language): CourseEntry[] {
+  const teaching = getTeachingData() as any
+  const entries: CourseEntry[] = []
+
+  for (const course of teaching.currentCourses ?? []) {
+    if (course.slug) entries.push({ ...course, isCurrent: true })
+  }
+  for (const block of teaching.pastCourses ?? []) {
+    for (const course of block.courses ?? []) {
+      if (course.slug) {
+        entries.push({ ...course, university: block.university, isCurrent: false })
+      }
+    }
+  }
+
+  return language ? localizeObject(entries, language) : entries
+}
+
+/** Slugs of every course page to pre-render (see app/teaching/[course]/page.tsx). */
+export function getCourseSlugs(): string[] {
+  return getAllCourses().map((course) => course.slug)
+}
+
+export function getCourseBySlug(slug: string, language?: Language): CourseEntry | null {
+  return getAllCourses(language).find((course) => course.slug === slug) ?? null
 }
 
 export function getEtcData(language?: Language) {
