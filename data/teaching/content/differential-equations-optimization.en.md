@@ -1,6 +1,8 @@
 Here you will find the material for the course. The course covers ordinary
 differential equations and optimization methods.
 
+You can find the lecture notes **[here](./files/Notes_EDO_22-09.pdf)** (last updated on 22/09).
+
 <!--
   ─────────────────────────────────────────────────────────────────────
   HOW TO ADD CONTENT TO THIS PAGE
@@ -15,14 +17,13 @@ differential equations and optimization methods.
          /teaching/files/Fiche_1_2027.pdf — nothing to change, it works
          the same from /teaching and from this course page.
 
-  • WORKSHEET TABLE: uncomment the block below and adapt it.
+  • WORKSHEET TABLE: add one row per worksheet in the table below
   • YouTube VIDEO: paste the <iframe> tag YouTube gives you, as is.
   ─────────────────────────────────────────────────────────────────────
 -->
 
-<!--
+<br>
+
 | Worksheet | Solutions |
 |-----------|-----------|
-| [TD 1](./files/EDO_Fiche_1.pdf) | [Solutions](./files/EDO_Fiche_1_cor.pdf) |
-| [TD 2](./files/EDO_Fiche_2.pdf) |  |
--->
+| *Coming soon* |  |

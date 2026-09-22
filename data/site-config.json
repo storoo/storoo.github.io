@@ -90,8 +90,11 @@
           "en": "In preparation",
           "fr": "En préparation"
         },
-        "abstract": "",
-        "links": []
+        "abstract": {
+          "en": "Cartesian 2-fibrations provide a way to understand indexed categories, but their classical ``straightening'' construction requires several layers of weak coherence data. This paper develops a homotopical framework that replaces much of this bookkeeping with a fully strict model. By using marked 2-categories to record the cartesian morphisms and 2-cells, we construct a model structure whose fibrant objects are precisely the cartesian 2-fibrations over a fixed 2-category $$\\mathcal{C}$$. We then show that the marked Grothendieck construction identifies these 2-fibrations, up to weak equivalence, with strict 2-functors from $$\\mathcal{C}$$ into $$2\\mathrm{Cat}$$. As an additional contribution, we construct localizations of 2-categories that simultaneously invert selected morphisms and 2-cells.",
+          "fr": "Les 2-fibrations cartésiennes fournissent un moyen de comprendre les catégories indexées, mais leur construction classique de ``redressement'' nécessite plusieurs couches de données de cohérence faible. Cet article développe un cadre homotopique qui remplace une grande partie de cette gestion par un modèle entièrement strict. En utilisant des 2-catégories marquées pour enregistrer les morphismes et 2-cellules cartésiens, nous construisons une structure de modèle dont les objets fibrants sont précisément les 2-fibrations cartésiennes sur une 2-catégorie fixe $$\\mathcal{C}$$. Nous montrons ensuite que la construction de Grothendieck marquée identifie ces 2-fibrations, à équivalence faible près, avec des 2-foncteurs stricts de $$\\mathcal{C}$$ dans $$2\\mathrm{Cat}$$. Comme contribution supplémentaire, nous construisons des localisations de 2-catégories qui inversent simultanément certains morphismes et 2-cellules sélectionnés."
+        },
+        "links": [{ "type": "arXiv", "url": "https://arxiv.org/abs/2609.11759" }]
       },
       {
         "title": "Derived categories for real spaces",

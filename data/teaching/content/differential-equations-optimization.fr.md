@@ -1,6 +1,8 @@
 Vous trouverez ici le matériel du cours. Le cours couvre les équations
 différentielles ordinaires et les méthodes d'optimisation.
 
+Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_22-09.pdf)** (dernière mise à jour le 22/09).
+
 <!--
   ─────────────────────────────────────────────────────────────────────
   COMMENT AJOUTER DU CONTENU À CETTE PAGE
@@ -15,14 +17,13 @@ différentielles ordinaires et les méthodes d'optimisation.
          /teaching/files/Fiche_1_2027.pdf — inutile de le modifier,
          il fonctionne aussi bien depuis /teaching que depuis cette page.
 
-  • TABLEAU DE FICHES : décommenter le bloc ci-dessous et l'adapter.
+  • TABLEAU DE FICHES : ajouter une ligne par fiche dans le tableau ci-dessous
   • VIDÉO YouTube : coller directement la balise <iframe> fournie par YouTube.
   ─────────────────────────────────────────────────────────────────────
 -->
 
-<!--
+<br>
+
 | Fiche de TD | Corrections |
 |-------------|-------------|
-| [TD 1](./files/EDO_Fiche_1.pdf) | [Correction](./files/EDO_Fiche_1_cor.pdf) |
-| [TD 2](./files/EDO_Fiche_2.pdf) |  |
--->
+| *Bientôt disponible* |  |
