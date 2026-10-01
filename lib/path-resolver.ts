@@ -82,6 +82,7 @@ function isFilePath(path: string): boolean {
   const fileExtensions = [
     '.pdf', '.doc', '.docx', '.ppt', '.pptx', '.xls', '.xlsx',
     '.txt', '.md', '.tex', '.bib', '.zip', '.tar', '.gz',
+    '.ipynb', '.py',
     '.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp',
     '.mp4', '.mp3', '.wav', '.avi', '.mov'
   ];

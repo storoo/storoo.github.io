@@ -18,6 +18,8 @@ You can find the lecture notes **[here](./files/Notes_EDO_22-09.pdf)** (last upd
          the same from /teaching and from this course page.
 
   • WORKSHEET TABLE: add one row per worksheet in the table below
+  • LAB (TP) TABLE: add one row per TP; notebooks (.ipynb) download,
+    slides (.pdf) open in a new tab
   • YouTube VIDEO: paste the <iframe> tag YouTube gives you, as is.
   ─────────────────────────────────────────────────────────────────────
 -->
@@ -27,3 +29,10 @@ You can find the lecture notes **[here](./files/Notes_EDO_22-09.pdf)** (last upd
 | Worksheet | Solutions |
 |-----------|-----------|
 | *Coming soon* |  |
+
+<br>
+
+| Lab session (TP) | Jupyter notebook | Slides |
+|------------------|------------------|--------|
+| TP 2 — Euler's methods | [TP2_Euler.ipynb](./files/TP2_Euler.ipynb) | [Slides](./files/TP2_Euler_slides.pdf) |
+| TP 3 — Taylor's methods | [TP3_Taylor.ipynb](./files/TP3_Taylor.ipynb) | [Slides](./files/TP3_Taylor_slides.pdf) |

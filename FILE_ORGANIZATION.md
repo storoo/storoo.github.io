@@ -77,6 +77,7 @@ The system recognizes and handles these file types:
 - **Presentations**: PPT, PPTX  
 - **Spreadsheets**: XLS, XLSX
 - **Academic**: TEX, BIB
+- **Code**: IPYNB (Jupyter notebooks), PY
 - **Archives**: ZIP, TAR, GZ
 - **Media**: JPG, PNG, GIF, SVG, MP4, MP3
 

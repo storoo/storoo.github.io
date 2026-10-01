@@ -18,6 +18,8 @@ Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_22-09.pdf)** (d
          il fonctionne aussi bien depuis /teaching que depuis cette page.
 
   • TABLEAU DE FICHES : ajouter une ligne par fiche dans le tableau ci-dessous
+  • TABLEAU DES TP : ajouter une ligne par TP ; les notebooks (.ipynb) se
+    téléchargent, les slides (.pdf) s'ouvrent dans un nouvel onglet
   • VIDÉO YouTube : coller directement la balise <iframe> fournie par YouTube.
   ─────────────────────────────────────────────────────────────────────
 -->
@@ -27,3 +29,10 @@ Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_22-09.pdf)** (d
 | Fiche de TD | Corrections |
 |-------------|-------------|
 | *Bientôt disponible* |  |
+
+<br>
+
+| TP | Notebook Jupyter | Slides |
+|----|------------------|--------|
+| TP 2 — Méthodes d'Euler | [TP2_Euler.ipynb](./files/TP2_Euler.ipynb) | [Slides](./files/TP2_Euler_slides.pdf) |
+| TP 3 — Méthodes de Taylor | [TP3_Taylor.ipynb](./files/TP3_Taylor.ipynb) | [Slides](./files/TP3_Taylor_slides.pdf) |
