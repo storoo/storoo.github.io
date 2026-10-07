@@ -1,7 +1,7 @@
 Vous trouverez ici le matériel du cours. Le cours couvre les équations
 différentielles ordinaires et les méthodes d'optimisation.
 
-Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_22-09.pdf)** (dernière mise à jour le 22/09).
+Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_07-10.pdf)** (dernière mise à jour le 07/10).
 
 <!--
   ─────────────────────────────────────────────────────────────────────
@@ -17,6 +17,7 @@ Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_22-09.pdf)** (d
          /teaching/files/Fiche_1_2027.pdf — inutile de le modifier,
          il fonctionne aussi bien depuis /teaching que depuis cette page.
 
+  • TABLEAU DES SLIDES DE COURS : ajouter une ligne par séance
   • TABLEAU DE FICHES : ajouter une ligne par fiche dans le tableau ci-dessous
   • TABLEAU DES TP : ajouter une ligne par TP ; les notebooks (.ipynb) se
     téléchargent, les slides (.pdf) s'ouvrent dans un nouvel onglet
@@ -26,9 +27,17 @@ Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_22-09.pdf)** (d
 
 <br>
 
+| Sujet | Slides |
+|-------|--------|
+| Équations linéaires d'ordre supérieur : théorie générale et équation homogène | [Slides](./files/S3_seance1_theorie_et_homogene.pdf) |
+
+<br>
+
 | Fiche de TD | Corrections |
 |-------------|-------------|
-| *Bientôt disponible* |  |
+| [TD 1](./files/TD1_EDO.pdf) |  |
+| [TD 2](./files/TD2_EDO.pdf) |  |
+| [TD 3](./files/TD3_EDO.pdf) |  |
 
 <br>
 

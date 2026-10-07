@@ -1,7 +1,7 @@
 Here you will find the material for the course. The course covers ordinary
 differential equations and optimization methods.
 
-You can find the lecture notes **[here](./files/Notes_EDO_22-09.pdf)** (last updated on 22/09).
+You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last updated on 07/10).
 
 <!--
   ─────────────────────────────────────────────────────────────────────
@@ -17,6 +17,7 @@ You can find the lecture notes **[here](./files/Notes_EDO_22-09.pdf)** (last upd
          /teaching/files/Fiche_1_2027.pdf — nothing to change, it works
          the same from /teaching and from this course page.
 
+  • LECTURE SLIDES TABLE: add one row per session
   • WORKSHEET TABLE: add one row per worksheet in the table below
   • LAB (TP) TABLE: add one row per TP; notebooks (.ipynb) download,
     slides (.pdf) open in a new tab
@@ -26,9 +27,17 @@ You can find the lecture notes **[here](./files/Notes_EDO_22-09.pdf)** (last upd
 
 <br>
 
+| Topic | Slides |
+|-------|--------|
+| Session 1 — Higher-order linear equations: general theory and the homogeneous equation | [Slides](./files/S3_seance1_theorie_et_homogene.pdf) |
+
+<br>
+
 | Worksheet | Solutions |
 |-----------|-----------|
-| *Coming soon* |  |
+| [TD 1](./files/TD1_EDO.pdf) |  |
+| [TD 2](./files/TD2_EDO.pdf) |  |
+| [TD 3](./files/TD3_EDO.pdf) |  |
 
 <br>
 
