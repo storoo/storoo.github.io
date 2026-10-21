@@ -10,6 +10,7 @@ import { useLanguage } from "@/lib/language-context"
 
 const navigationItems = [
   { name: { en: "Research", fr: "Recherche" }, href: "/research" },
+  { name: { en: "Talks", fr: "Exposés" }, href: "/talks" },
   { name: { en: "Teaching", fr: "Enseignement" }, href: "/teaching" },
   { name: { en: "Etc", fr: "Etc" }, href: "/etc" },
 ] as const

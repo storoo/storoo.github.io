@@ -11,6 +11,9 @@ public/
 │       ├── research-project-1.pdf
 │       ├── paper-draft.tex
 │       └── data-analysis.xlsx
+├── talks/
+│   └── files/
+│       └── 2026-10-wg-slides.pdf
 ├── teaching/
 │   └── files/
 │       ├── course-notes-fall2025.pdf
@@ -68,6 +71,7 @@ The system automatically resolves paths based on context:
 | Teaching page | `./files/notes.pdf` | `/teaching/files/notes.pdf` |
 | Any page | `./research/files/paper.pdf` | `/research/files/paper.pdf` |
 | Any page | `./teaching/files/syllabus.pdf` | `/teaching/files/syllabus.pdf` |
+| Talks page | `./files/slides.pdf` | `/talks/files/slides.pdf` |
 
 ## Supported File Types
 

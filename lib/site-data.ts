@@ -1,5 +1,6 @@
 import siteConfig from "@/data/site-config.json"
 import teachingContent from "@/data/teaching/content"
+import talksContent from "@/data/talks/content"
 
 export type SiteConfig = typeof siteConfig
 export type Language = 'en' | 'fr'
@@ -178,4 +179,88 @@ export function getEtcData(language?: Language) {
     return localizeObject(siteConfig.etc, language)
   }
   return siteConfig.etc
+}
+
+/**
+ * The /talks page lives in site-config.json under "talks", with two lists:
+ * "talks" and "workingGroups". See TALKS_GUIDE.md for templates.
+ */
+export interface TalkLink {
+  type: LocalizedText
+  url: string
+}
+
+export interface Talk {
+  title: LocalizedText
+  note?: LocalizedText
+  links?: TalkLink[]
+}
+
+/**
+ * One event I spoke at. A single talk is written inline (title / note /
+ * links); several talks at the same event go in `talks` instead.
+ */
+export interface TalkEntry extends Partial<Talk> {
+  year: string | number
+  date?: LocalizedText
+  event: LocalizedText
+  place?: LocalizedText
+  talks?: Talk[]
+  hidden?: boolean
+}
+
+/**
+ * A working group. Giving it a `slug` creates a page at /talks/<slug>, whose
+ * body comes from data/talks/content/<slug>.{en,fr}.md when that file exists.
+ */
+export interface WorkingGroup {
+  slug?: string
+  period: string
+  name: LocalizedText
+  place?: LocalizedText
+  role?: LocalizedText
+  summary?: LocalizedText
+  links?: TalkLink[]
+  hidden?: boolean
+  content?: LocalizedText
+}
+
+function talkYear(entry: TalkEntry): number {
+  const match = String(entry.year ?? "").match(/\d{4}/)
+  return match ? Number(match[0]) : 0
+}
+
+export function getTalksData(language?: Language) {
+  const data = JSON.parse(JSON.stringify((siteConfig as any).talks ?? {}))
+
+  // Every entry ends up with a `talks` array, newest year first. The sort is
+  // stable, so entries from the same year keep their order from the JSON.
+  data.talks = ((data.talks ?? []) as TalkEntry[])
+    .filter((entry) => !entry.hidden)
+    .map((entry) => ({
+      ...entry,
+      talks: entry.talks ?? (entry.title ? [{ title: entry.title, note: entry.note, links: entry.links }] : []),
+    }))
+    .sort((a, b) => talkYear(b) - talkYear(a))
+
+  data.workingGroups = ((data.workingGroups ?? []) as WorkingGroup[])
+    .filter((group) => !group.hidden)
+    .map((group) => {
+      const content = group.slug ? talksContent[group.slug] : undefined
+      return content ? { ...group, content } : group
+    })
+
+  return language ? localizeObject(data, language) : data
+}
+
+/** Slugs of every working-group page to pre-render (see app/talks/[group]/page.tsx). */
+export function getWorkingGroupSlugs(): string[] {
+  return (getTalksData().workingGroups as WorkingGroup[])
+    .filter((group) => group.slug)
+    .map((group) => group.slug as string)
+}
+
+export function getWorkingGroupBySlug(slug: string, language?: Language): WorkingGroup | null {
+  const groups = getTalksData(language).workingGroups as WorkingGroup[]
+  return groups.find((group) => group.slug === slug) ?? null
 }

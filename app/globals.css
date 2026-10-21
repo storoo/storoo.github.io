@@ -98,6 +98,36 @@
   }
 }
 
+/* Markdown body of working-group pages (/talks/<slug>). No typography plugin
+   is installed, so headings and lists need a minimal style of their own. */
+.md-body h2 {
+  @apply text-2xl font-semibold text-foreground font-serif mt-8 mb-3;
+}
+.md-body h3 {
+  @apply text-lg font-semibold text-foreground mt-6 mb-2;
+}
+.md-body p,
+.md-body table {
+  @apply my-3;
+}
+.md-body ul {
+  @apply list-disc pl-6 my-3 space-y-1;
+}
+.md-body ol {
+  /* Room for two-digit numbers: the card clips anything left of its edge. */
+  @apply list-decimal pl-9 my-3 space-y-1;
+}
+.md-body :is(h2, h3, p, ul, ol, table):first-child {
+  @apply mt-0;
+}
+/* Program tables need every pixel on a phone. */
+@media (max-width: 639px) {
+  .md-body th,
+  .md-body td {
+    @apply px-2 py-1.5;
+  }
+}
+
 /* Custom KaTeX font styling */
 /* .katex {
   font-family: "STIX Two Math", "STIX Two Text", "Times New Roman", "Liberation Serif", serif !important;

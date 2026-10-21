@@ -40,6 +40,7 @@ export function resolvePath(path: string, currentPage: string): ResolvedPath {
     // If it starts with a page name, use it as is
     if (relativePath.startsWith('research/') || 
         relativePath.startsWith('teaching/') || 
+        relativePath.startsWith('talks/') || 
         relativePath.startsWith('etc/')) {
       return {
         href: `/${relativePath}`,

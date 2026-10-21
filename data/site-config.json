@@ -74,8 +74,8 @@
         "title": "Simplicial $$C_2$$-Isovariant Homotopy Theory",
         "authors": ["Santiago Toro"],
         "venue": {
-          "en": "Submitted, 2024",
-          "fr": "Soumis, 2024"
+          "en": "Submitted",
+          "fr": "Soumis"
         },
         "abstract": {
           "en": "This article presents a novel approach to construct a model category structure designed to model the homotopy theory of spaces equipped with an action by the group $$C_2$$, where morphisms are considered to be isovariant. Our methodology centers on simplicial techniques. We replace the conventional simplex category $$\\Delta$$ with a modified category $$C_2 \\Delta$$ and then delve into the study of presheaves of sets on $$C_2 \\Delta$$. To establish the model category structure we employ Cisinski's methods for model structures in categories of presheaves. In particular, we use an analogous idea to the one employed by Cisinski and Moerdjik in the construction of a model category structure for [Dendroidal Sets](https://arxiv.org/abs/0902.1954). Our approach distinguishes itself from prior work, such as [Yeakel's](https://arxiv.org/abs/1907.12135) which primarily focuses on a more topological context and, brings a new perspective to the study of isovariant homotopy theory for $$C_2$$-spaces.",
@@ -87,8 +87,8 @@
         "title": "A model structure for 2 cartesian fibrations",
         "authors": ["C. Bardomiano", "J. Nickel", "M. Sarazola", "P. Verdugo", "D. Teixeira", "S. Toro Oquendo"],
         "venue": {
-          "en": "In preparation",
-          "fr": "En préparation"
+          "en": "Submitted",
+          "fr": "Soumis"
         },
         "abstract": {
           "en": "Cartesian 2-fibrations provide a way to understand indexed categories, but their classical ``straightening'' construction requires several layers of weak coherence data. This paper develops a homotopical framework that replaces much of this bookkeeping with a fully strict model. By using marked 2-categories to record the cartesian morphisms and 2-cells, we construct a model structure whose fibrant objects are precisely the cartesian 2-fibrations over a fixed 2-category $$\\mathcal{C}$$. We then show that the marked Grothendieck construction identifies these 2-fibrations, up to weak equivalence, with strict 2-functors from $$\\mathcal{C}$$ into $$2\\mathrm{Cat}$$. As an additional contribution, we construct localizations of 2-categories that simultaneously invert selected morphisms and 2-cells.",
@@ -167,6 +167,284 @@
       ],
       "disabled": true
     }
+  },
+  "talks": {
+    "_howToAddContent": "See TALKS_GUIDE.md at the root of the repository for templates (a talk, several talks at one event, a working group, a working group with its own page).",
+    "intro": {
+      "en": "Talks I have given, and working groups I have organized or taken part in. Slides and notes are linked when available.",
+      "fr": "Les exposés que j'ai donnés et les groupes de travail que j'ai organisés ou suivis. Les transparents et les notes sont en lien lorsqu'ils sont disponibles."
+    },
+    "talks": [
+      {
+        "year": "2026",
+        "date": {
+          "en": "19 October",
+          "fr": "19 octobre"
+        },
+        "event": {
+          "en": "[Rencontre 2026 de topologie algébrique](https://topologie-2026.sciencesconf.org/), one-day working group",
+          "fr": "[Rencontre 2026 de topologie algébrique](https://topologie-2026.sciencesconf.org/), groupe de travail"
+        },
+        "place": "Institut Fourier, Grenoble",
+        "title": {
+          "en": "A homotopy coherent cellular nerve for bicategories I",
+          "fr": "Nerf cellulaire homotopiquement cohérent pour les bicatégories I"
+        },
+        "note": {
+          "en": "Expository talk on [A. Campbell, *A homotopy coherent cellular nerve for bicategories*](https://arxiv.org/abs/1907.01999).",
+          "fr": "Exposé sur l'article [A. Campbell, *A homotopy coherent cellular nerve for bicategories*](https://arxiv.org/abs/1907.01999)."
+        },
+        "links": [
+          {
+            "type": {
+              "en": "Slides",
+              "fr": "Transparents"
+            },
+            "url": "./files/talk4_campbell_slides_2026.pdf"
+          },
+          {
+            "type": {
+              "en": "Working group programme",
+              "fr": "Programme du groupe de travail"
+            },
+            "url": "/talks/rtop-2026/"
+          }
+        ]
+      },
+      {
+        "year": "2026",
+        "date": {
+          "en": "30 April",
+          "fr": "30 avril"
+        },
+        "event": "[Motifs Bourguignons II](https://dubouloz.perso.math.cnrs.fr/GdTs/MB-25/index.html)",
+        "place": "Université Bourgogne Europe, Dijon",
+        "title": "Towards a bigraded (co)homology theory for real algebraic varieties"
+      },
+      {
+        "year": "2026",
+        "date": {
+          "en": "April",
+          "fr": "avril"
+        },
+        "event": {
+          "en": "Algebra seminar of the Laboratoire de Mathématiques de Lens",
+          "fr": "Séminaire d'algèbre du Laboratoire de Mathématiques de Lens"
+        },
+        "place": "Université d'Artois, Lens",
+        "title": "The homotopy theory of cartesian 2-fibrations"
+      },
+      {
+        "year": "2026",
+        "date": {
+          "en": "April",
+          "fr": "avril"
+        },
+        "event": {
+          "en": "Deep learning working group of the LML",
+          "fr": "Groupe de travail en apprentissage profond du LML"
+        },
+        "place": "Université d'Artois, Lens",
+        "title": "Fondements mathématiques de l'apprentissage par renforcement"
+      },
+      {
+        "year": "2024",
+        "event": "Journées de Géométries Poitiers-Angers",
+        "place": "Université de Poitiers",
+        "title": "A model structure for 2-fibrations"
+      },
+      {
+        "year": "2024",
+        "event": "Mathematics in the Southern Cone II",
+        "place": "Universidad de la República, Montevideo",
+        "title": "A model structure for Grothendieck 2-fibrations"
+      },
+      {
+        "year": "2023",
+        "date": {
+          "en": "21 June",
+          "fr": "21 juin"
+        },
+        "event": {
+          "en": "[Journées de géométrie algébrique réelle](https://www.lebesgue.fr/index%2Ephp/fr/JRjuin23), Centre Henri Lebesgue",
+          "fr": "[Journées de géométrie algébrique réelle](https://www.lebesgue.fr/index%2Ephp/fr/JRjuin23) du Centre Henri Lebesgue"
+        },
+        "place": "Nantes Université",
+        "title": "$$C_2$$-isovariant simplicial homotopy in real algebraic geometry"
+      },
+      {
+        "year": "2023",
+        "event": {
+          "en": "Dynamical systems and geometry seminar of the LAREMA",
+          "fr": "Séminaire systèmes dynamiques et géométrie du LAREMA"
+        },
+        "place": "Université d'Angers",
+        "title": "Simplicial isovariant homotopy theory"
+      },
+      {
+        "year": "2023",
+        "event": {
+          "en": "Working group “The real cycle map” of the LMBA",
+          "fr": "Groupe de travail « The real cycle map » du LMBA"
+        },
+        "place": "Université de Bretagne Occidentale, Brest",
+        "talks": [
+          {
+            "title": "Sheaf cohomology"
+          },
+          {
+            "title": "Witt rings"
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "date": {
+          "en": "15 and 22 June",
+          "fr": "15 et 22 juin"
+        },
+        "event": {
+          "en": "[Online workgroup “$$\\mathbb{A}^1$$-connected components”](https://hqdiag.pages.math.cnrs.fr/home/Workgroups/Pi0-2023.html) of the ANR project HQDIAG",
+          "fr": "[Groupe de travail en ligne « $$\\mathbb{A}^1$$-connected components »](https://hqdiag.pages.math.cnrs.fr/home/Workgroups/Pi0-2023.html) de l'ANR HQDIAG"
+        },
+        "place": "École normale supérieure de Lyon",
+        "talks": [
+          {
+            "title": "$$\\mathbb{A}^1$$-connected components II",
+            "note": {
+              "en": "On pages 349–354 of [C. Balwe, A. Hogadi and A. Sawant, *$$\\mathbb{A}^1$$-connected components of schemes*](https://arxiv.org/abs/1312.6388).",
+              "fr": "Sur les pages 349–354 de [C. Balwe, A. Hogadi et A. Sawant, *$$\\mathbb{A}^1$$-connected components of schemes*](https://arxiv.org/abs/1312.6388)."
+            },
+            "links": [
+              {
+                "type": {
+                  "en": "Slides",
+                  "fr": "Transparents"
+                },
+                "url": "https://hqdiag.pages.math.cnrs.fr/home/Workgroups/pdf/Pi0_Toro1.pdf"
+              }
+            ]
+          },
+          {
+            "title": "$$\\mathbb{A}^1$$-connected components III",
+            "note": {
+              "en": "On the end of the same paper.",
+              "fr": "Sur la fin du même article."
+            },
+            "links": [
+              {
+                "type": {
+                  "en": "Slides",
+                  "fr": "Transparents"
+                },
+                "url": "https://hqdiag.pages.math.cnrs.fr/home/Workgroups/pdf/Pi0_Toro2.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "date": {
+          "en": "15 April",
+          "fr": "15 avril"
+        },
+        "event": {
+          "en": "[Working group “Géométrie réelle, motifs et $$\\mathbb{A}^1$$-homotopie”](https://deglise.perso.math.cnrs.fr/Real.html) of the ANR project HQDIAG",
+          "fr": "[Groupe de travail « Géométrie réelle, motifs et $$\\mathbb{A}^1$$-homotopie »](https://deglise.perso.math.cnrs.fr/Real.html) de l'ANR HQDIAG"
+        },
+        "place": "École normale supérieure de Lyon",
+        "title": "Stable homotopy theory of the real étale site",
+        "note": {
+          "en": "On sections 2 and 3 of [T. Bachmann, *Motivic and real étale stable homotopy theory*](https://arxiv.org/abs/1608.08855).",
+          "fr": "Sur les sections 2 et 3 de [T. Bachmann, *Motivic and real étale stable homotopy theory*](https://arxiv.org/abs/1608.08855)."
+        },
+        "links": [
+          {
+            "type": {
+              "en": "Slides",
+              "fr": "Transparents"
+            },
+            "url": "https://deglise.perso.math.cnrs.fr/gdt/Real/Santiago_notes.pdf"
+          }
+        ]
+      },
+      {
+        "year": "2021",
+        "event": {
+          "en": "Working group “Higher category theory” of the LMBA",
+          "fr": "Groupe de travail « Higher category theory » du LMBA"
+        },
+        "place": "Université de Bretagne Occidentale, Brest",
+        "title": "Simplicial categories, Segal spaces and quasi-categories",
+        "links": [
+          {
+            "type": {
+              "en": "Programme and videos",
+              "fr": "Programme et vidéos"
+            },
+            "url": "/talks/infcat/"
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "event": {
+          "en": "PhD students' seminar of the LMBA",
+          "fr": "Séminaire des doctorant·e·s du LMBA"
+        },
+        "place": "Université de Bretagne Occidentale, Brest",
+        "title": "Universal homotopy theories (after Daniel Dugger)"
+      },
+      {
+        "year": "2020",
+        "event": "Electronic Computational Homotopy Theory (eCHT) seminar",
+        "place": "Wayne State University, Detroit",
+        "title": "On the homology spectral sequence of a cosimplicial space"
+      }
+    ],
+    "workingGroups": [
+      {
+        "slug": "rtop-2026",
+        "period": "2026",
+        "name": {
+          "en": "Working group on higher categories",
+          "fr": "Groupe de travail sur les catégories supérieures"
+        },
+        "place": "[Rencontre 2026 de topologie algébrique](https://topologie-2026.sciencesconf.org/), Institut Fourier, Grenoble",
+        "role": {
+          "en": "Speaker",
+          "fr": "Orateur"
+        },
+        "summary": {
+          "en": "One-day working group for young researchers that opened the conference: presheaf categories, Cisinski's theory, $$\\Theta$$ and $$n$$-quasi-categories, and Campbell's homotopy coherent nerve for bicategories.",
+          "fr": "Groupe de travail d'une journée pour jeunes chercheur·euses, en ouverture de la conférence : catégories de préfaisceaux, théorie de Cisinski, $$\\Theta$$ et $$n$$-quasi-catégories, et le nerf homotopiquement cohérent des bicatégories de Campbell."
+        }
+      },
+      {
+        "period": "2022–2023",
+        "name": "The real cycle map",
+        "place": "LMBA, Université de Bretagne Occidentale, Brest",
+        "role": {
+          "en": "Co-organizer, with Pierre Martinez",
+          "fr": "Co-organisateur, avec Pierre Martinez"
+        }
+      },
+      {
+        "slug": "infcat",
+        "period": "2021–2022",
+        "name": "Higher category theory",
+        "place": "LMBA, Université de Bretagne Occidentale, Brest",
+        "role": {
+          "en": "Co-organizer, with Pierre Martinez and Johannes Huisman",
+          "fr": "Co-organisateur, avec Pierre Martinez et Johannes Huisman"
+        },
+        "summary": {
+          "en": "Models of $$(\\infty,1)$$-categories (simplicial categories, Segal spaces, complete Segal spaces, quasi-categories), following Julia Bergner's book. Most sessions were recorded.",
+          "fr": "Modèles des $$(\\infty,1)$$-catégories (catégories simpliciales, espaces de Segal, espaces de Segal complets, quasi-catégories), en suivant le livre de Julia Bergner. La plupart des séances ont été filmées."
+        }
+      }
+    ]
   },
   "teaching": {
     "philosophy": {
