@@ -45,3 +45,6 @@ Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_07-10.pdf)** (d
 |----|------------------|--------|
 | TP 2 — Méthodes d'Euler | [TP2_Euler.ipynb](./files/TP2_Euler.ipynb) | [Slides](./files/TP2_Euler_slides.pdf) |
 | TP 3 — Méthodes de Taylor | [TP3_Taylor.ipynb](./files/TP3_Taylor.ipynb) | [Slides](./files/TP3_Taylor_slides.pdf) |
+| TP 5 — Méthodes de Runge–Kutta |  | [Slides](./files/TP5_RungeKutta_slides.pdf) |
+| TP 6 — Optimisation |  | [Slides](./files/TP6_Optimisation_slides.pdf) |
+| TP 7 — Descente de gradient |  | [Slides](./files/TP7_DescenteGradient_slides.pdf) |
