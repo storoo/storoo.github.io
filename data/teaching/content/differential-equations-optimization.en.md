@@ -48,3 +48,4 @@ You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last upd
 | TP 5 — Runge–Kutta methods |  | [Slides](./files/TP5_RungeKutta_slides.pdf) |
 | TP 6 — Optimization |  | [Slides](./files/TP6_Optimisation_slides.pdf) |
 | TP 7 — Gradient descent |  | [Slides](./files/TP7_DescenteGradient_slides.pdf) |
+| TP 8 — Gradient descent: applications |  | [Slides](./files/TP8_Applications_slides.pdf) |
