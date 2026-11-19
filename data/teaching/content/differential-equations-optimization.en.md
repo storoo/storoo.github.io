@@ -3,6 +3,8 @@ differential equations and optimization methods.
 
 You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last updated on 07/10).
 
+The correction of the first exam is available **[here](./files/DS_corrige_EDO.pdf)**.
+
 <!--
   ─────────────────────────────────────────────────────────────────────
   HOW TO ADD CONTENT TO THIS PAGE
