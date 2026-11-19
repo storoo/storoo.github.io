@@ -1,9 +1,7 @@
 Here you will find the material for the course. The course covers ordinary
 differential equations and optimization methods.
 
-You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last updated on 07/10).
-
-The correction of the first exam is available **[here](./files/DS_corrige_EDO.pdf)**.
+You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last updated on 07/10). The correction of the first exam is available **[here](./files/DS_corrige_EDO.pdf)**.
 
 <!--
   ─────────────────────────────────────────────────────────────────────

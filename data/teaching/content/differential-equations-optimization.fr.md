@@ -1,7 +1,7 @@
 Vous trouverez ici le matériel du cours. Le cours couvre les équations
 différentielles ordinaires et les méthodes d'optimisation.
 
-Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_07-10.pdf)** (dernière mise à jour le 07/10).
+Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_07-10.pdf)** (dernière mise à jour le 07/10). La correction du premier examen est disponible **[ici](./files/DS_corrige_EDO.pdf)**.
 
 <!--
   ─────────────────────────────────────────────────────────────────────
