@@ -1,7 +1,7 @@
 Vous trouverez ici le matériel du cours. Le cours couvre les équations
 différentielles ordinaires et les méthodes d'optimisation.
 
-Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_07-10.pdf)** (dernière mise à jour le 07/10). La correction du premier examen est disponible **[ici](./files/DS_corrige_EDO.pdf)**.
+Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_24-11.pdf)** (dernière mise à jour le 24/11). La correction du premier examen est disponible **[ici](./files/DS_corrige_EDO.pdf)**.
 
 <!--
   ─────────────────────────────────────────────────────────────────────
@@ -30,6 +30,7 @@ Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_07-10.pdf)** (d
 | Sujet | Slides |
 |-------|--------|
 | Équations linéaires d'ordre supérieur : théorie générale et équation homogène | [Slides](./files/S3_seance1_theorie_et_homogene.pdf) |
+| Systèmes différentiels linéaires : méthodes de résolution | [Slides](./files/S4_resolution_systemes_lineaires.pdf) |
 
 <br>
 
@@ -38,6 +39,7 @@ Vous pouvez trouver les notes de cours **[ici](./files/Notes_EDO_07-10.pdf)** (d
 | [TD 1](./files/TD1_EDO.pdf) |  |
 | [TD 2](./files/TD2_EDO.pdf) |  |
 | [TD 3](./files/TD3_EDO.pdf) |  |
+| [TD 4](./files/TD4_EDO.pdf) |  |
 
 <br>
 

@@ -1,7 +1,7 @@
 Here you will find the material for the course. The course covers ordinary
 differential equations and optimization methods.
 
-You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last updated on 07/10). The correction of the first exam is available **[here](./files/DS_corrige_EDO.pdf)**.
+You can find the lecture notes **[here](./files/Notes_EDO_24-11.pdf)** (last updated on 24/11). The correction of the first exam is available **[here](./files/DS_corrige_EDO.pdf)**.
 
 <!--
   ─────────────────────────────────────────────────────────────────────
@@ -30,6 +30,7 @@ You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last upd
 | Topic | Slides |
 |-------|--------|
 | Session 1 — Higher-order linear equations: general theory and the homogeneous equation | [Slides](./files/S3_seance1_theorie_et_homogene.pdf) |
+| Session 2 — Linear differential systems: solution methods | [Slides](./files/S4_resolution_systemes_lineaires.pdf) |
 
 <br>
 
@@ -38,6 +39,7 @@ You can find the lecture notes **[here](./files/Notes_EDO_07-10.pdf)** (last upd
 | [TD 1](./files/TD1_EDO.pdf) |  |
 | [TD 2](./files/TD2_EDO.pdf) |  |
 | [TD 3](./files/TD3_EDO.pdf) |  |
+| [TD 4](./files/TD4_EDO.pdf) |  |
 
 <br>
 
